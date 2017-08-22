@@ -1,0 +1,27 @@
+# eclipse metadata #
+*/.metadata
+.metadata
+.svn
+*/.svn
+Thumbs.db
+*/Thumbs.db
+
+.DS_Store
+*/.DS_Store
+
+# logs #
+.log
+
+# Other extensions #
+*/.zip
+.zip
+*/.DS_Store
+*.DS_Store
+
+# Visual studio code metadata #
+*/.vscode
+.vscode
+
+# Node JS Modules #
+*/node_modules
+node_modules
