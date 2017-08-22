@@ -13,3 +13,9 @@
 [submodule "bootstrapextracomponents"]
 	path = bootstrapextracomponents
 	url = https://github.com/Servoy/bootstrapextracomponents.git
+[submodule "svyMicroSamples"]
+	path = svyMicroSamples
+	url = https://github.com/Servoy/svyMicroSamples
+[submodule "webnotifications"]
+	path = webnotifications
+	url = https://github.com/Servoy/webnotifications
