@@ -1,0 +1,15 @@
+[submodule "example-solutions"]
+	path = example-solutions
+	url = https://github.com/Servoy/example-solutions.git
+[submodule "svyKeyListener"]
+	path = svyKeyListener
+	url = https://github.com/Servoy/svyKeyListener.git
+[submodule "svyChartJS"]
+	path = svyChartJS
+	url = https://github.com/Servoy/svyChartJS.git
+[submodule "svySearch"]
+	path = svySearch
+	url = https://github.com/Servoy/svySearch.git
+[submodule "bootstrapextracomponents"]
+	path = bootstrapextracomponents
+	url = https://github.com/Servoy/bootstrapextracomponents.git
