@@ -19,3 +19,7 @@
 [submodule "webnotifications"]
 	path = webnotifications
 	url = https://github.com/Servoy/webnotifications
+[submodule "svyGroupingGrid"]
+	path = svyGroupingGrid
+	url = https://github.com/Servoy/svyGroupingGrid
+	branch = feature-ag-grid
