@@ -5,15 +5,19 @@
 [submodule "svyKeyListener"]
 	path = svyKeyListener
 	url = https://github.com/Servoy/svyKeyListener.git
+	branch = master
 [submodule "svyChartJS"]
 	path = svyChartJS
 	url = https://github.com/Servoy/svyChartJS.git
+	branch = master
 [submodule "svySearch"]
 	path = svySearch
 	url = https://github.com/Servoy/svySearch.git
+	branch = master
 [submodule "bootstrapextracomponents"]
 	path = bootstrapextracomponents
 	url = https://github.com/Servoy/bootstrapextracomponents.git
+	branch = master
 [submodule "svyMicroSamples"]
 	path = svyMicroSamples
 	url = https://github.com/Servoy/svyMicroSamples
@@ -21,6 +25,7 @@
 [submodule "webnotifications"]
 	path = webnotifications
 	url = https://github.com/Servoy/webnotifications
+	branch = master
 [submodule "svyGroupingGrid"]
 	path = svyGroupingGrid
 	url = https://github.com/Servoy/svyGroupingGrid
