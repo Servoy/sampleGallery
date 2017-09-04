@@ -28,7 +28,7 @@ exports.config = {
 
   // Spec patterns are relative to this directory.
   specs: [
-    'features/sample_application/foundset.feature'
+    'features/*.feature'
   ],
 
   cucumberOpts: {
