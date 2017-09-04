@@ -1,10 +1,9 @@
 Feature: Testing the Servoy Sample Galery - Cyptogrophy
     Scenario Outline: Protractor and Cucumber Test
 
-Given I go to "My Application to Test"
+Given I go to http://demo.servoy.com/sampleGallery/solutions/sampleGallery/index.html?f=galleryMain
 When servoy sidenav component with name galleryMain.nav tab Working with Data is clicked
 When servoy sidenav component with name galleryMain.nav tab Cryptography is clicked
-When servoy combobox component with name exampleCrypto.algorithm is clicked
 When servoy combobox component with name exampleCrypto.algorithm is clicked
 When servoy combobox component with name exampleCrypto.algorithm the text <algorithm> is inserted
 When I press enter
