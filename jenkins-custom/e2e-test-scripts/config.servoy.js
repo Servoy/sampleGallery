@@ -6,6 +6,7 @@ exports.config = {
   framework: 'custom',
   params: {
     screenshotDirectory: 'reports/screenshots/',
+    testDomainURL: 'http://localhost:8080/solutions/svyMicroSamples/index.html',
     htmlDirectory: 'reports/html_reports/',
     jsonDirectory: 'reports/cucumber_reports/'
   },
