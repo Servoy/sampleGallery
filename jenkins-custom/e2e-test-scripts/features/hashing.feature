@@ -7,7 +7,6 @@ When servoy sidenav component with name galleryMain.nav tab Secure Hashing is cl
 When servoy combobox component with name exampleHash.algrothim is clicked
 When servoy combobox component with name exampleHash.algrothim is clicked
 When servoy combobox component with name exampleHash.algrothim the text <hash> is inserted
-When I press enter
 When default textarea component with name exampleHash.plainText the text secret code is inserted
 When servoy button component with name exampleHash.svy_ is clicked
 
