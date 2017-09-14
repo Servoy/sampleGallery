@@ -41,7 +41,6 @@ dataProviderID:"address",
 location:"60,102",
 size:"140,20",
 text:"Address",
-transparent:true,
 typeid:4,
 uuid:"B6C5E93B-B499-4FAD-B2DD-D58CE35DE7D2"
 }
