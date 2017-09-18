@@ -67,7 +67,7 @@ uuid:"2B66C2AF-6FCA-4D9E-BFF4-52F10C4DB5DC"
 borderType:"LineBorder,1,#000000",
 items:[
 {
-dataProviderID:"customers_to_orders_web_elements.order_id",
+dataProviderID:"customers_to_orders.orderid",
 editable:false,
 location:"286,902",
 size:"140,20",
@@ -76,7 +76,7 @@ typeid:4,
 uuid:"5CEF0B18-07DB-4A08-A5DE-B58BACC0B81C"
 },
 {
-dataProviderID:"customers_to_orders_web_elements.order_date",
+dataProviderID:"customers_to_orders.orderdate",
 displayType:5,
 location:"285,933",
 size:"140,20",
@@ -88,7 +88,7 @@ uuid:"728DAA1A-D0ED-49E4-AFAD-5E1525509266"
 ],
 location:"131,855",
 name:"portal",
-relationName:"customers_to_orders_web_elements",
+relationName:"customers_to_orders",
 reorderable:true,
 resizable:true,
 showHorizontalLines:true,
@@ -115,7 +115,6 @@ typeid:7,
 uuid:"3E4A623F-5641-4289-9ED1-BF306646013E"
 },
 {
-dataProviderID:"scopes.svyWebElements.comboBoxValue",
 displayType:2,
 editable:false,
 location:"131,825",
@@ -144,7 +143,6 @@ typeid:7,
 uuid:"4B8703EA-4CE2-4C12-BD09-022B71A1D8A8"
 },
 {
-dataProviderID:"scopes.svyWebElements.spinnerValue",
 displayType:13,
 location:"131,795",
 size:"436,20",
@@ -161,7 +159,6 @@ typeid:7,
 uuid:"5B9F0CA7-ED91-48F3-B6CB-39E2C2DE3FD8"
 },
 {
-dataProviderID:"scopes.svyWebElements.typeAheadValue",
 displayType:10,
 location:"131,765",
 size:"436,20",
@@ -197,7 +194,6 @@ typeid:7,
 uuid:"7F51A3F2-7055-45BB-BA38-9EE471C2955B"
 },
 {
-dataProviderID:"scopes.svyWebElements.checkboxValue",
 displayType:4,
 location:"131,146",
 size:"32,20",
@@ -205,7 +201,6 @@ typeid:4,
 uuid:"80FC7BF1-7C76-4412-B80C-3E4DE0602F19"
 },
 {
-dataProviderID:"scopes.svyWebElements.calendar",
 displayType:5,
 format:"dd-MM-yyyy",
 location:"131,508",
@@ -235,7 +230,6 @@ valuelistID:"E822F664-288F-49EF-A786-F1788999C5FC"
 },
 {
 borderType:"LineBorder,1,#000000",
-dataProviderID:"scopes.svyWebElements.imageMedia",
 displayType:9,
 location:"131,538",
 size:"436,146",
@@ -244,7 +238,6 @@ typeid:4,
 uuid:"9FA0B884-04EF-4FCB-9770-A59E4EF33A42"
 },
 {
-dataProviderID:"scopes.svyWebElements.longText",
 displayType:1,
 location:"131,176",
 size:"436,57",
@@ -269,7 +262,6 @@ typeid:7,
 uuid:"CFFF0357-A6E7-40A0-B393-5336F1ABE2EE"
 },
 {
-dataProviderID:"scopes.svyWebElements.textInput",
 location:"131,15",
 placeholderText:"Insert text...",
 printable:false,
