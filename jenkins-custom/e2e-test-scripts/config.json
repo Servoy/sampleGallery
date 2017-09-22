@@ -7,12 +7,7 @@
             "browserName": "chrome"
           }, {
             "browserName": "firefox"
-          }/*, {
-            "browserName": "internet explorer",
-            "platform": "ANY",
-            "version": "11",
-            "ignoreZoomSetting": true    
-          }*/],
+          }],
 
         "specs": [
             "./features/hashing.feature"
