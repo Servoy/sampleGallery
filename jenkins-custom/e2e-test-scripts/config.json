@@ -8,7 +8,7 @@
           }],
 
         "specs": [
-            "./features/hashing.feature"
+            "./features/*.feature"
         ]
     }
 }
