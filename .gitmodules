@@ -29,7 +29,7 @@
 [submodule "svyGroupingGrid"]
 	path = svyGroupingGrid
 	url = https://github.com/Servoy/svyGroupingGrid
-	branch = feature-ag-grid
+	branch = master
 [submodule "fullcalendarcomponent"]
 	path = fullcalendarcomponent
 	url = https://github.com/Servoy/fullcalendarcomponent
