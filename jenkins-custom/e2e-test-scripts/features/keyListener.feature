@@ -13,8 +13,6 @@ When servoy button component with name keyListenerExample.addListener is clicked
 When default textfield component with name keyListenerExample.pw I want to insert Que Delícia
 Then default label component with name keyListenerExample.matchingCount I expect the text to equal Matching order records: 9
 
-Then I want to sleep
-
 @data_table_servoy
 Examples:
 | day     | month    | year |
