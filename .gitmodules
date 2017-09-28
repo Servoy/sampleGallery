@@ -28,7 +28,7 @@
 	branch = master
 [submodule "svyGroupingGrid"]
 	path = svyGroupingGrid
-	url = https://github.com/Servoy/svyGroupingGrid
+	url=https://github.com/Servoy/aggridcomponents
 	branch = master
 [submodule "fullcalendarcomponent"]
 	path = fullcalendarcomponent
