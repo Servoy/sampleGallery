@@ -4,7 +4,6 @@ Feature: Testing the aagrid component
 Given I go to http://tomcat.demo.servoy-cloud.eu/sampleGallery/solutions/sampleGallery/index.html?f=galleryMain
 When servoy sidenav component with name galleryMain.nav tab Fullcalendar Component is clicked
 When servoy calendar component with name demoCalendar I want to see my appointments on <day> <month> <year>
-Then I want to sleep
 
 @data_table_servoy
 Examples:
