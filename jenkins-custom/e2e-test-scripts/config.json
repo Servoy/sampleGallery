@@ -8,7 +8,7 @@
           }],
 
         "specs": [
-            "./features/*.feature"
+            "./features/keyListener.feature"
         ]
     }
 }
