@@ -4,6 +4,7 @@
 
 TRUNCATE TABLE order_details;
 
+BEGIN;
 INSERT INTO order_details (orderid, productid, unitprice, quantity, discount) VALUES (10248, 42, 10, 10, 0);
 INSERT INTO order_details (orderid, productid, unitprice, quantity, discount) VALUES (10250, 65, 17, 15, 0.150000005960464006);
 INSERT INTO order_details (orderid, productid, unitprice, quantity, discount) VALUES (10251, 57, 16, 15, 0.0500000007450581013);
@@ -2167,3 +2168,4 @@ INSERT INTO order_details (orderid, productid, unitprice, quantity, discount) VA
 INSERT INTO order_details (orderid, productid, unitprice, quantity, discount) VALUES (11035, 1, 10, 10, 0);
 INSERT INTO order_details (orderid, productid, unitprice, quantity, discount) VALUES (11047, 1, 10, 25, 0.25);
 INSERT INTO order_details (orderid, productid, unitprice, quantity, discount) VALUES (11070, 1, 10, 40, 0.150000005960464006);
+COMMIT;

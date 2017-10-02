@@ -4,6 +4,7 @@
 
 TRUNCATE TABLE orders;
 
+BEGIN;
 INSERT INTO orders (orderid, customerid, employeeid, orderdate, requireddate, shippeddate, shipvia, freight, shipname, shipaddress, shipcity, shipregion, shippostalcode, shipcountry) VALUES (10252, 'SUPRD', 4, '1996-07-09 16:00:00', '1996-08-06 16:00:00', '1996-07-11 16:00:00', 2, 51, 'Suprêmes délices', 'Boulevard Tirou, 255', 'Charleroi', NULL, 'B-6000', 'Belgium');
 INSERT INTO orders (orderid, customerid, employeeid, orderdate, requireddate, shippeddate, shipvia, freight, shipname, shipaddress, shipcity, shipregion, shippostalcode, shipcountry) VALUES (10254, 'CHOPS', 5, '1996-07-11 16:00:00', '1996-08-08 16:00:00', '1996-07-23 16:00:00', 2, 23, 'Chop-suey Chinese', 'Hauptstr. 31', 'Bern', NULL, '3012', 'Switzerland');
 INSERT INTO orders (orderid, customerid, employeeid, orderdate, requireddate, shippeddate, shipvia, freight, shipname, shipaddress, shipcity, shipregion, shippostalcode, shipcountry) VALUES (10255, 'RICSU', 9, '1996-07-12 16:00:00', '1996-08-09 16:00:00', '1996-07-15 16:00:00', 3, 148, 'Richter Supermarkt', 'Starenweg 5', 'Genève', NULL, '1204', 'Switzerland');
@@ -832,3 +833,4 @@ INSERT INTO orders (orderid, customerid, employeeid, orderdate, requireddate, sh
 INSERT INTO orders (orderid, customerid, employeeid, orderdate, requireddate, shippeddate, shipvia, freight, shipname, shipaddress, shipcity, shipregion, shippostalcode, shipcountry) VALUES (10257, 'AROUT', 3, '1996-07-16 16:00:00', '1996-08-13 16:00:00', '1996-07-22 16:00:00', 3, 82, 'HILARION-Abastos', 'Carrera 22 con Ave. Carlos Soublette #8-35', 'San Cristóbal', 'Táchira', '5022', 'Venezuela');
 INSERT INTO orders (orderid, customerid, employeeid, orderdate, requireddate, shippeddate, shipvia, freight, shipname, shipaddress, shipcity, shipregion, shippostalcode, shipcountry) VALUES (10249, 'ANTON', 8, '1996-07-05 16:00:00', '1996-08-16 16:00:00', '1996-07-10 16:00:00', 1, 12, 'Toms Spezialitäten', 'Luisenstr. 48', 'Münster', NULL, '44087', 'Germany');
 INSERT INTO orders (orderid, customerid, employeeid, orderdate, requireddate, shippeddate, shipvia, freight, shipname, shipaddress, shipcity, shipregion, shippostalcode, shipcountry) VALUES (10312, 'WANDK', 2, '1996-09-27 16:00:00', '1996-10-21 16:00:00', '1996-10-03 16:00:00', 2, 40, 'Die Wandernde Kuh', 'Adenauerallee 900', 'Stuttgart', NULL, '70563', 'Germany');
+COMMIT;

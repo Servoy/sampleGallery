@@ -4,6 +4,7 @@
 
 TRUNCATE TABLE customers;
 
+BEGIN;
 INSERT INTO customers (customerid, companyname, contactname, contacttitle, address, city, region, postalcode, country, phone, fax) VALUES ('AROUT', 'Around the Horn', 'Thomas Hardy', 'Sales Representative', '120 Hanover Sq.', 'London', NULL, 'WA1 1DP', 'UK', '(171) 555-7788', '(171) 555-6750');
 INSERT INTO customers (customerid, companyname, contactname, contacttitle, address, city, region, postalcode, country, phone, fax) VALUES ('BERGS', 'Berglunds snabbköp', 'Christina Berglund', 'Order Administrator', 'Berguvsvägen 8', 'Luleå', NULL, 'S-958 22', 'Sweden', '0921-12 34 65', '0921-12 34 67');
 INSERT INTO customers (customerid, companyname, contactname, contacttitle, address, city, region, postalcode, country, phone, fax) VALUES ('BLAUS', 'Blauer See Delikatessen', 'Hanna Moos', 'Sales Representative', 'Forsterstr. 57', 'Mannheim', NULL, '68306', 'Germany', '0621-08460', '0621-08924');
@@ -95,3 +96,4 @@ INSERT INTO customers (customerid, companyname, contactname, contacttitle, addre
 INSERT INTO customers (customerid, companyname, contactname, contacttitle, address, city, region, postalcode, country, phone, fax) VALUES ('WILMK', 'Wilman Kala', 'Matti Karttunen', 'Owner/Marketing Assistant', 'Keskuskatu 45', 'Helsinki', NULL, '21240', 'Finland', '90-224 8858', '90-224 8858');
 INSERT INTO customers (customerid, companyname, contactname, contacttitle, address, city, region, postalcode, country, phone, fax) VALUES ('WOLZA', 'Wolski Zajazd', 'Zbyszek Piestrzeniewicz', 'Owner', 'ul. Filtrowa 68', 'Warszawa', NULL, '01-012', 'Poland', '(26) 642-7012', '(26) 642-7012');
 INSERT INTO customers (customerid, companyname, contactname, contacttitle, address, city, region, postalcode, country, phone, fax) VALUES ('ALFKI', 'Alfreds Futterkiste', 'Mary', 'Sales Representative', 'Obere Str. 57', 'Berlin', NULL, '12209', 'USA', '030-0074321', '030-0076545');
+COMMIT;
