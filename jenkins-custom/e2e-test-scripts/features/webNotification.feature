@@ -1,7 +1,7 @@
 Feature: Testing the aagrid component
     Scenario Outline: Protractor and Cucumber Test
 
-Given I go to http://localhost:8080/solutions/sampleGallery/index.html?f=galleryMain
+Given I go to http://tomcat.demo.servoy-cloud.eu/sampleGallery/solutions/sampleGallery/index.html?f=galleryMain
 When servoy sidenav component with name galleryMain.nav tab Browser Integrations is clicked
 When servoy sidenav component with name galleryMain.nav tab Web Notifications is clicked
 
