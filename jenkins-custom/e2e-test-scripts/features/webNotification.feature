@@ -1,4 +1,4 @@
-Feature: Testing the aagrid component
+Feature: Testing the webnotification components
     Scenario Outline: Protractor and Cucumber Test
 
 Given I go to http://tomcat.demo.servoy-cloud.eu/sampleGallery/solutions/sampleGallery/index.html?f=galleryMain
