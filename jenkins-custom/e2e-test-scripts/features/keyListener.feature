@@ -2,7 +2,7 @@ Feature: Testing the Servoy Sample Galery - Keylistener component
     Scenario Outline: Protractor and Cucumber Test
 
 Given I go to http://tomcat.demo.servoy-cloud.eu/sampleGallery/solutions/sampleGallery/index.html?f=galleryMain
-# Then I want to refresh the page
+Then I want to refresh the page
 When servoy sidenav component with name galleryMain.nav tab Browser Integrations is clicked
 When servoy sidenav component with name galleryMain.nav tab Key Listener is clicked
 

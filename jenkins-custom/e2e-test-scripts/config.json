@@ -4,7 +4,7 @@
             
         },
         "multiCapabilities": [{
-            "browserName": "chrome"
+            "browserName": "firefox"
           }],
 
         "specs": [
