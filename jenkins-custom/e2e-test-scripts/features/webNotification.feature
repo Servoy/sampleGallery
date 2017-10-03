@@ -1,4 +1,4 @@
-Feature: Testing the webnotification components
+Feature: Testing the Servoy Sample Galery - Webnotifications   
     Scenario Outline: Protractor and Cucumber Test
 
 Given I go to http://tomcat.demo.servoy-cloud.eu/sampleGallery/solutions/sampleGallery/index.html?f=galleryMain

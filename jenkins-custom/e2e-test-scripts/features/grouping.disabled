@@ -1,4 +1,4 @@
-Feature: Testing the aagrid component
+Feature: Testing the Servoy Sample Galery - AGGrid component   
     Scenario Outline: Protractor and Cucumber Test
 
 Given I go to http://localhost:8080/solutions/svyGroupingGridDemo/index.html?f=agGridOrders

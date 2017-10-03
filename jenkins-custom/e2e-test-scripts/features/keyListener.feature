@@ -1,4 +1,4 @@
-Feature: Testing the keyListener component
+Feature: Testing the Servoy Sample Galery - Keylistener component
     Scenario Outline: Protractor and Cucumber Test
 
 Given I go to http://tomcat.demo.servoy-cloud.eu/sampleGallery/solutions/sampleGallery/index.html?f=galleryMain
