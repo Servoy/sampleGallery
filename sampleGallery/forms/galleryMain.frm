@@ -9,7 +9,7 @@ extendsID:"-1",
 items:[
 {
 formIndex:1,
-imageMediaID:"CCE7495F-48DA-456A-8BCA-47860E05FCB4",
+imageMediaID:"C66D3007-EEE0-4B12-ACAE-330C4D9A2D8C",
 location:"14,19",
 name:"logo",
 size:"151,61",
@@ -62,7 +62,7 @@ uuid:"AEA90014-C522-4A82-A8C4-F3C0268533A1"
 name:"galleryMain",
 navigatorID:"-1",
 onShowMethodID:"696B263B-32A1-4978-A630-785906095510",
-size:"259,463",
+size:"260,463",
 styleClass:"theme-servoy",
 transparent:true,
 typeid:3,
