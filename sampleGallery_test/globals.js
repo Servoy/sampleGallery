@@ -22,6 +22,7 @@ function test_showSample__runWithCorrectID__ExpectReturnTrue() {
 	// Assign
 	var correctFormName = 'welcome'
 	// Act
+	// FIXME this method interacts with the UI should not be tested ina JSUnit test
 	var vResult = globals.showSample(correctFormName);
 	
 	//Assert

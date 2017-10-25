@@ -109,8 +109,10 @@ function showSample(id) {
 	/** @type {RuntimeForm<galleryContainerBase>} */
 	var containerForm = getContainerForm();
 	
-	if(containerForm.showSample(form)) {
-		title = form.getName();
+	if(containerForm && containerForm.showSample(form)) {
+		if (form.getName) {
+			title = form.getName();
+		}
 		return true;
 	} else {
 		return false;
@@ -144,5 +146,5 @@ function minimizeContent() {
 function getContainerForm() {
 	/** @type {RuntimeForm<galleryContainerBase>} */
 	var containerForm = forms[elements.nav.containedForm];
-	return containerForm
+	return containerForm;
 }
