@@ -1,0 +1,10 @@
+addEmptyValue:1,
+customProperties:"lazyLoading:false",
+dataProviderID1:"country",
+dataSource:"db:/example_data/customers",
+name:"defaultTableCountries",
+returnDataProviders:1,
+showDataProviders:1,
+typeid:34,
+uuid:"CD4E8BB4-8106-46DE-A188-BA1D42A330A8",
+valueListType:1
