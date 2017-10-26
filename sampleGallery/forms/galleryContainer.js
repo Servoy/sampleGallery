@@ -84,6 +84,10 @@ function getActiveSample(){
  */
 function showSample(form) {
 	
+	if (form.getDescription) {
+		elements.description.text = form.getDescription();
+	}
+	
 	// add tab
 	elements.tabs.setLeftForm(form);
 	elements.tabs.setRightForm(forms.content);
