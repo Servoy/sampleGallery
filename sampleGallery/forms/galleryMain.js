@@ -3,7 +3,7 @@
  * @type {String}
  * @properties={typeid:35,uuid:"4C94E620-F8D4-474F-83E3-59BC13F5DFB2"}
  */
-var title = 'Welcome to MicroSamples!';
+var title = 'Welcome to MicroSamples';
 
 /**
  * @private 
@@ -81,99 +81,6 @@ function onShow(firstShow, event) {
 	if(firstShow){
 		buildMenu();
 	}
-	elements.tabs.dividerLocation = .99;
-}
-
-/**
- * @properties={typeid:24,uuid:"F5F20A0C-4458-4B94-B666-B453CA14C92D"}
- */
-function showInfo(){
-
-	var sample = getActiveSample();
-	if(!sample) return;
-	var info = sample.getMoreInfo();
-	if(!info) return;
-	forms.markdownContent.setContent(info);
-	elements.tabs.setRightForm(forms.markdownContent);
-	elements.tabs.dividerLocation = .5;
-}
-
-/**
- * @properties={typeid:24,uuid:"09880D3C-A938-42AF-A7CC-0BD1B6FBBB24"}
- */
-function showCode(){
-	
-	elements.tabs.dividerLocation = .99;
-	
-	var sample = getActiveSample();
-	if(!sample) return;
-	var code = sample.getSampleCode();
-	if(!code || !code.length)return;
-	
-	forms.codeContent.setCode(code);
-	elements.tabs.setRightForm(forms.codeContent);
-	elements.tabs.dividerLocation = .5;
-}
-
-/**
- * @properties={typeid:24,uuid:"AF953A2B-DEAC-4511-914A-A7F97396ADDB"}
- */
-function showWebSite(){
-	var sample = getActiveSample();
-	if(!sample) return;
-	var url = sample.getWebSiteURL()
-	if(!url) return;
-	
-	application.showURL(url);
-}
-
-/**
- * @properties={typeid:24,uuid:"199B63E5-0FA2-4110-84BA-8060C9FAAC5D"}
- */
-function download(){
-	var sample = getActiveSample();
-	if(!sample) return;
-	var url = sample.getDownloadURL();
-	if(!url) return;
-	
-	application.showURL(url);
-}
-
-/**
- * @properties={typeid:24,uuid:"D372854A-7FBC-4CAB-A810-3AE7891FBB92"}
- */
-function maximizeContent(){
-	var form = elements.tabs.getRightForm();
-	elements.tabs.setRightForm(null);
-	elements.tabs.dividerLocation = .99;
-
-	var win = application.createWindow(application.getUUID().toString(),JSWindow.MODAL_DIALOG);
-	win.resizable = true;
-	var w = application.getScreenWidth() - 100;
-	var h = application.getScreenHeight() - 100;
-	win.setSize(w,h);
-	win.undecorated = false;
-	win.show(form);
-}
-
-/**
- * @properties={typeid:24,uuid:"E127CE48-394A-4750-8E7A-FD8E08EB1EA0"}
- */
-function minimizeContent(){
-	elements.tabs.setRightForm(null);
-	elements.tabs.dividerLocation = .99;
-	application.closeAllWindows();
-}
-
-/**
- * @private 
- * @return {RuntimeForm<AbstractMicroSample>}
- * @properties={typeid:24,uuid:"AD40C270-1EB2-4D64-982D-50C3F0F40D8C"}
- */
-function getActiveSample(){
-	/** @type {RuntimeForm<AbstractMicroSample>} */
-	var sample = elements.tabs.getLeftForm();
-	return sample;
 }
 
 /**
@@ -184,34 +91,60 @@ function getActiveSample(){
  */
 function showSample(id) {
 	
-	// get selected item
 	/** @type {RuntimeForm<AbstractMicroSample>} */
 	var form = forms[id];
-	if(!form){
-		application.output("Sample form with id `"+id+"` not found",LOGGINGLEVEL.ERROR);
+	if (!form) {
+		application.output("Sample form with id `" + id + "` not found", LOGGINGLEVEL.ERROR);
 		return false;
 	} else {
-		application.output("Sample form with id `" +id+ "` selected", LOGGINGLEVEL.DEBUG);
+		application.output("Sample form with id `" + id + "` selected", LOGGINGLEVEL.DEBUG);
 	}
-	
+
 	if(!suppressMenuEvent) {
 		if(scopes.svySystem.isNGClient()) {
 			elements.nav.setSelectedMenuItem(id);
 		}
 	}
 	
-	// add tab
-	elements.tabs.setLeftForm(form);
-	elements.tabs.setRightForm(forms.content);
-	elements.tabs.dividerLocation = .99;
-//	elements.tabs.addTab(form,form.getName(),form.getName(),form.getDescription());
-
-	// set title, only if method is there
-	if(form.getDescription) {
-		title = form.getDescription();
+	/** @type {RuntimeForm<galleryContainerBase>} */
+	var containerForm = getContainerForm();
+	
+	if(containerForm && containerForm.showSample(form)) {
+		if (form.getName) {
+			title = form.getName();
+		}
+		return true;
 	} else {
-		application.output("Can't set title, method `getDescription` is missing on form `" + id + '`', LOGGINGLEVEL.INFO);
-		title = '';
+		return false;
 	}
-	return true;
+	
+}
+
+/**
+ * @public 
+ * @properties={typeid:24,uuid:"FDED0A81-0988-438C-8E8D-CC375FCE803A"}
+ */
+function maximizeContent() {
+	var containerForm = getContainerForm();
+	containerForm.maximizeContent();
+}
+
+/**
+ * @public 
+ * @properties={typeid:24,uuid:"06325433-930B-4C7D-8CEA-326E260FF81B"}
+ */
+function minimizeContent() {
+	var containerForm = getContainerForm();
+	containerForm.minimizeContent();
+}
+
+/**
+ * @protected 
+ * @return {RuntimeForm<galleryContainerBase>}
+ * @properties={typeid:24,uuid:"728DD0F1-B236-49B6-B9CB-0B5C4FC113CE"}
+ */
+function getContainerForm() {
+	/** @type {RuntimeForm<galleryContainerBase>} */
+	var containerForm = forms[elements.nav.containedForm];
+	return containerForm;
 }
