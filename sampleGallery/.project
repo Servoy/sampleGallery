@@ -9,7 +9,17 @@
 		<project>svyMicroSamples</project>
 		<project>svyUtils</project>
 		<project>svyhelp</project>
-		<project>servoy-extra-components</project>
+		<project>exampleCSS</project>
+		<project>exampleFilter</project>
+		<project>exampleSharedWebPackages</project>
+		<project>fullcalendarComponentSample</project>
+		<project>svyBlockUiDemo</project>
+		<project>svyChartJSExample</project>
+		<project>svyCryptoExample</project>
+		<project>svyGroupingGridDemo</project>
+		<project>svyKeyListenerExample</project>
+		<project>svySearchExample</project>
+		<project>webNotificationsExample</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

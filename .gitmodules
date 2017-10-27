@@ -34,3 +34,7 @@
 	path = fullcalendarcomponent
 	url = https://github.com/Servoy/fullcalendarcomponent
 	branch = master
+[submodule "webstorage"]
+	path = webstorage
+	url = https://github.com/Servoy/webstorage.git
+	branch = master
