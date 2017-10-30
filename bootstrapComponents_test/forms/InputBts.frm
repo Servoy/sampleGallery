@@ -97,11 +97,12 @@ location:{
 x:3,
 y:3
 },
-styleClass:"md-warn",
+styleClass:"form-control input-lg",
 tabSeq:5
 },
 location:"3,3",
 name:"mdinput_styled",
+styleClass:"form-control input-lg",
 typeName:"bootstrapcomponents-textbox",
 typeid:47,
 uuid:"098D692A-5E97-4D4A-98E8-484541C3F5B5"
