@@ -38,3 +38,7 @@
 	path = webstorage
 	url = https://github.com/Servoy/webstorage.git
 	branch = master
+[submodule "svyReCAPTCHA"]
+	path = svyReCAPTCHA
+	url = https://github.com/Servoy/svyReCAPTCHA.git
+	branch = master
