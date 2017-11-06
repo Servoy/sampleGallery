@@ -17,6 +17,8 @@ function onSolutionOpen(arg, queryParams) {
 
 	var display = ["Active", "Passive"]
 	var real = [1, 0]
+	
+	scopes.svyWebComponentsModel.initLongValuelist();
 	//application.setValueListItems("numbers",display,real)
 	// TODO Auto-generated method stub
 }

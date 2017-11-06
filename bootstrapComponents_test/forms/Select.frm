@@ -81,7 +81,7 @@ uuid:"56E6A870-CFEA-4657-976D-B33EB0A9D0CE"
 },
 {
 json:{
-dataProviderID:"varNumber",
+dataProviderID:"varString",
 enabled:true,
 label:"Long list",
 location:{

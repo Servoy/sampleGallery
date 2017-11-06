@@ -221,20 +221,13 @@ function getName() {
 }
 
 /**
- * @properties={typeid:24,uuid:"5F41E542-9C26-476A-80D8-0206EB055BAD"}
- */
-function getIconStyleClass() {
-	return 'fa fa-keyboard-o';
-}
-
-/**
 * @protected 
 * @return {RuntimeForm<AbstractMicroSample>}
 * @override 
 * @properties={typeid:24,uuid:"BB0827A3-E10A-4BB3-82EF-62ED77A85830"}
 */
 function getParent() {
-	return forms.commonComponentSamples;
+	return forms.commonComponentFieldSamples;
 }
 
 /**
