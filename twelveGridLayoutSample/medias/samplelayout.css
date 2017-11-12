@@ -1,0 +1,123 @@
+/* Default 100% height to responsive form in bootstrap tabpanel ? */
+.svy-tabpanel>.tab-content>.tab-pane>div>svy-formload>.svy-form {
+	/* height: 100%; */
+	
+}
+
+/* Default style for the Simple Collapsible */
+.simple-collapsible {
+	
+}
+
+.simple-collapsible-toggle {
+	
+}
+
+.simple-collapsible-icon {
+	
+}
+
+.simple-collapsible-content {
+	
+}
+
+.collapsed.simple-collapsible-toggle {
+	
+} /* the collapsible is collapsed */
+.in.simple-collapsible-content {
+	
+} /* the collapsible is expanded */
+
+/* Custom style for the Simple Collapsible */
+.clps-tertiary {
+	color: #333;
+}
+
+.clps-tertiary .simple-collapsible-toggle {
+	margin-bottom: 15px;
+	border-bottom: 1px solid #ddd;
+}
+
+/* Style for the horizontal line */
+.horizontal-line {
+	margin: 15px 0;
+	display: block;
+	border-bottom: 1px dotted #333;
+}
+
+/* Full-Size */
+.full-size {
+	height: 100%;
+	width: 100%;
+}
+
+/* Centered Container *
+.center-container {
+  position: relative;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+       -o-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  margin:auto;
+  display: inline-block;
+} */
+
+/* Solution */
+/* https://coderwall.com/p/0ph8lg/overflow-hidden-trick-to-fill-remaining-width */
+.sidenav-container {
+	
+}
+
+.sidenav-container-menu {
+	/*float:left; */
+	/* IT should be float but the menu it doesn't slide nicely if floated */
+	max-width: 250px;
+}
+
+.sidenav-container-content {
+	/*display:block;
+	float:left;*/
+	overflow-x: hidden;
+}
+
+/* 
+ .side-split {
+    height: 800px;
+	/* display: table; */ /*
+ }
+ 
+ .side-left {
+ 	max-width: 200px;
+ 	float: left;
+ }
+ 
+ .side-right {
+	height: 100%;
+ 	background: red;
+ 	overflow-x: hidden;
+ }
+ 
+ */
+.form-group {
+	margin: 15px 0;
+}
+
+.form-group>.inline-group>.inline-group-left {
+	width: 140px;
+}
+
+.header,.footer {
+	background: aliceblue;
+}
+
+.header:after {
+	position: static;
+	height: 100%;
+	content: 'AFTER';
+}
+
+.content-primary {
+	min-width: 640px;
+}
