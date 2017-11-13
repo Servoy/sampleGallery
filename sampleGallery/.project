@@ -20,6 +20,7 @@
 		<project>svyKeyListenerExample</project>
 		<project>svySearchExample</project>
 		<project>webNotificationsExample</project>
+		<project>twelveGridLayoutSample</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
