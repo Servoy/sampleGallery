@@ -256,6 +256,7 @@ svyUUID:"0AD8B25C-C21F-47DB-B009-147C5B8BAF98"
 ],
 addOns:[],
 dataProvider:"textcompanyName",
+onAction:"1318251D-F761-4B6A-9B85-ABA84F566F34",
 size:{
 height:40,
 width:300
@@ -347,6 +348,7 @@ svyUUID:"85FD9729-AC5E-4B98-9946-148FD3A02542"
 ],
 addOns:[],
 dataProvider:"textCity",
+onAction:"1318251D-F761-4B6A-9B85-ABA84F566F34",
 size:{
 height:40,
 width:300
@@ -426,6 +428,7 @@ svyUUID:"358D5A50-90E2-4EFF-9D06-6E9D6FF3467B"
 ],
 addOns:[],
 dataProvider:"textCountry",
+onAction:"1318251D-F761-4B6A-9B85-ABA84F566F34",
 size:{
 height:40,
 width:300
@@ -529,6 +532,7 @@ svyUUID:"A88C041B-7965-4B43-B0D4-DBA67A7622E0"
 ],
 addOns:[],
 dataProvider:"textContactName",
+onAction:"1318251D-F761-4B6A-9B85-ABA84F566F34",
 size:{
 height:40,
 width:300

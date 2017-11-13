@@ -1,7 +1,7 @@
 firstFormID:"26F4D284-0209-4BC5-A16D-45EC274FCF0E",
 i18nDataSource:"db:/fullcalendar/tbl_i18n",
 loginFormID:"-1",
-modulesNames:"svyMicroSamples,svyUtils,exampleBasicComponents,exampleCSS,exampleFilter,svyBlockUiDemo,svyChartJSExample,svyCryptoExample,svyKeyListenerExample,svySearchExample,webNotificationsExample,exampleSharedWebPackages,fullcalendarComponentSample,svyWebStorageExample,svyRecaptcha,svyGroupingGridDemo,bootstrapExtraComponentsDemo",
+modulesNames:"svyMicroSamples,svyUtils,exampleBasicComponents,exampleCSS,exampleFilter,svyBlockUiDemo,svyChartJSExample,svyCryptoExample,svyKeyListenerExample,svySearchExample,webNotificationsExample,exampleSharedWebPackages,fullcalendarComponentSample,svyWebStorageExample,svyRecaptcha,svyGroupingGridDemo,bootstrapExtraComponentsDemo,twelveGridLayoutSample",
 onOpenMethodID:"-1",
 styleSheetID:"A060BE9A-592F-49BF-A6FC-9F46ADFA6356",
 typeid:43,

@@ -3,7 +3,7 @@
  *
  * @properties={typeid:35,uuid:"97B6F2FB-1B23-4059-962F-F3A693822B57"}
  */
-var searchText = "Alfred";
+var searchText = "";
 
 /**
  * @type {String}
@@ -89,4 +89,31 @@ function onMenuItemClicked(event, menuItem) {
 	var method = form.newMethod('function aMethod(event){application.output("Hello world!");}');
 	var button = myListViewForm.newButton('Show message!', 50, 50, 100, 30, method);
 	forms['newForm1'].controller.show();
+}
+
+/**
+ * @param {JSEvent} event
+ *
+ * @protected
+ *
+ * @properties={typeid:24,uuid:"1318251D-F761-4B6A-9B85-ABA84F566F34"}
+ */
+function onFilterSearch(event) {
+	
+	var query = datasources.db.example_data.customers.createSelect();
+	query.result.addPk()
+	if (textcompanyName) {
+		query.where.add(query.columns.companyname.upper.like("%" + textcompanyName.toUpperCase() +"%"));
+	}
+	if (textContactName) {
+		query.where.add(query.columns.contactname.upper.like("%" + textContactName.toUpperCase() +"%"));
+	}
+	if (textCity) {
+		query.where.add(query.columns.city.upper.like("%" + textCity.toUpperCase() +"%"));
+	}
+	if (textCountry) {
+		query.where.add(query.columns.country.upper.like("%" + textCountry.toUpperCase() +"%"));
+	}
+	foundset.loadRecords(query)
+
 }

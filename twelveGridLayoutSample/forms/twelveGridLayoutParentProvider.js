@@ -53,4 +53,25 @@ function getParent() {
 function getSort() {
 	return 5;
 }
+
+
+/**
+*
+* @return {String} Additioanl info (wiki markdown supported)
+*
+* @properties={typeid:24,uuid:"2DE43D88-F534-40AF-8415-B1749D75D4C6"}
+*/
+function getMoreInfo() {
+	return plugins.http.getPageData('https://raw.githubusercontent.com/Servoy/12grid/master/README.md')
+}
+
+/**
+*
+* @return {String} Website URL
+*
+* @properties={typeid:24,uuid:"8CBD7DEE-8930-4C93-A9E2-ABAABF0E4AC2"}
+*/
+function getWebSiteURL() {
+	return 'https://github.com/Servoy/12grid/wiki';
+}
  
