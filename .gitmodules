@@ -42,3 +42,6 @@
 	path = svyReCAPTCHA
 	url = https://github.com/Servoy/svyReCAPTCHA.git
 	branch = master
+[submodule "svyPDFViewer"]
+	path = svyPDFViewer
+	url = https://github.com/Servoy/svyPDFViewer.git

@@ -13,6 +13,7 @@
 	<buildpathentry exported="true" kind="prj" path="/svyGroupingGridDemo"/>
 	<buildpathentry exported="true" kind="prj" path="/svyKeyListenerExample"/>
 	<buildpathentry exported="true" kind="prj" path="/svyMicroSamples"/>
+	<buildpathentry exported="true" kind="prj" path="/svyPDFViewerExample"/>
 	<buildpathentry exported="true" kind="prj" path="/svyRecaptcha"/>
 	<buildpathentry exported="true" kind="prj" path="/svySearchExample"/>
 	<buildpathentry exported="true" kind="prj" path="/svyUtils"/>
