@@ -54,14 +54,42 @@ function showWebSite() {
 
 /**
  * @protected
+ * @param {JSEvent} event
  * @properties={typeid:24,uuid:"26C35725-E454-4BC2-8281-2AD233F7B9CB"}
  */
-function download() {
+function download(event) {
 	var sample = getActiveSample();
 	if (!sample) return;
 	var url = sample.getDownloadURL();
-	if (!url) return;
+	if (!url) {
+		return;
+	} else if(url.match(/api\.github\.com/)) {
+		/** @type {{assets:Array<{name: String, browser_download_url: String }>}} */
+		var api = JSON.parse(plugins.http.getPageData(url));
+		if(api.assets && api.assets.length > 1) {
+			var window = plugins.window.createPopupMenu()
+			for(var i in api.assets) {
+				var item = window.addMenuItem(api.assets[i].name);
+				item.setMethod(showUrl,[api.assets[i].browser_download_url]);
+			}
+			window.show(event.getSource());
+		} else {
+			if(api.assets && api.assets.length > 1) {
+				showUrl(api.assets[0].browser_download_url)
+			}
+		}
+	} else {
+		showUrl(url);
+	}
+}
 
+/**
+ * @private 
+ * @param {String} url
+ *
+ * @properties={typeid:24,uuid:"44B7C41F-2CFE-4C8E-9B3E-343D7E591F9A"}
+ */
+function showUrl(url) {
 	application.showURL(url);
 }
 
