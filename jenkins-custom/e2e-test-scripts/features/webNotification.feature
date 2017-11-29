@@ -3,7 +3,7 @@ Feature: Testing the Servoy Sample Galery - Webnotifications
 
 Given I go to http://tomcat.demo.servoy-cloud.eu/sampleGallery/solutions/sampleGallery/index.html?f=galleryMain
 When servoy sidenav component with name galleryMain.nav tab Browser Integrations is clicked
-When servoy sidenav component with name galleryMain.nav tab Web Notifications is clicked
+When servoy sidenav component with name galleryMain.nav tab ToastR Notifications is clicked
 
 When servoy button component with name toastrExample.toaster_info is clicked
 Then default toast component I want to validate that there is an info toast present
