@@ -5,7 +5,6 @@
 	<projects>
 		<project>resources</project>
 		<project>svycodebox</project>
-		<project>exampleBasicComponents</project>
 		<project>svyMicroSamples</project>
 		<project>svyUtils</project>
 		<project>svyhelp</project>
@@ -16,6 +15,7 @@
 		<project>svyBlockUiDemo</project>
 		<project>svyChartJSExample</project>
 		<project>svyCryptoExample</project>
+		<project>svyExampleBasicComponents</project>
 		<project>svyGroupingGridDemo</project>
 		<project>svyKeyListenerExample</project>
 		<project>svySearchExample</project>
