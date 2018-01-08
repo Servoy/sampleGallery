@@ -46,7 +46,3 @@
 	path = svyPDFViewer
 	url = https://github.com/Servoy/svyPDFViewer.git
 	branch = master
-[submodule "svyExampleBasicComponents"]
-	path = svyExampleBasicComponents
-	url = https://github.com/Servoy/svyExampleBasicComponents.git
-	branch = master
