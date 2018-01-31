@@ -50,3 +50,6 @@
 	path = svyExampleBasicComponents
 	url = https://github.com/Servoy/svyExampleBasicComponents.git
 	branch = master
+[submodule "svywebcam"]
+	path = svywebcam
+	url = https://github.com/Servoy/svywebcam.git
