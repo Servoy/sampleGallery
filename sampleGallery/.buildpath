@@ -10,6 +10,7 @@
 	<buildpathentry exported="true" kind="prj" path="/svyChartJSExample"/>
 	<buildpathentry exported="true" kind="prj" path="/svyCryptoExample"/>
 	<buildpathentry exported="true" kind="prj" path="/svyExampleBasicComponents"/>
+	<buildpathentry exported="true" kind="prj" path="/svyExtraComponents"/>
 	<buildpathentry exported="true" kind="prj" path="/svyGroupingGridDemo"/>
 	<buildpathentry exported="true" kind="prj" path="/svyKeyListenerExample"/>
 	<buildpathentry exported="true" kind="prj" path="/svyMicroSamples"/>
@@ -19,5 +20,6 @@
 	<buildpathentry exported="true" kind="prj" path="/svyUtils"/>
 	<buildpathentry exported="true" kind="prj" path="/svyWebStorageExample"/>
 	<buildpathentry exported="true" kind="prj" path="/twelveGridLayoutSample"/>
+	<buildpathentry exported="true" kind="prj" path="/webCamExample"/>
 	<buildpathentry exported="true" kind="prj" path="/webNotificationsExample"/>
 </buildpath>

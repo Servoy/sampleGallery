@@ -2,21 +2,21 @@
  * @properties={typeid:24,uuid:"B4526769-2F1D-48A0-A110-5211F7F05282"}
  */
 function getParent() {
-	return forms.svyExtraComponentsMain;
+	return forms.commonComponentButtonSamples;
 }
 
 /**
  * @properties={typeid:24,uuid:"3BA72923-260D-4A77-A41A-55FB9E4224A2"}
  */
 function getName() {
-	return 'Font Awesome'
+	return 'Font Icons'
 }
 
 /**
  * @properties={typeid:24,uuid:"18890C39-6057-47FD-8337-AFE4012944D9"}
  */
 function getDescription() {
-	return 'Font Awesome';
+	return 'Font Icons';
 }
 
 /**

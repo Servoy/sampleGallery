@@ -2,7 +2,7 @@
  * @properties={typeid:24,uuid:"32EF7680-B500-4415-99F5-7AF469FC750F"}
  */
 function getParent() {
-	return forms.ex;
+	return null;
 }
 
 /**

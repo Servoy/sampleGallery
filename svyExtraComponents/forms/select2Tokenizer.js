@@ -2,7 +2,7 @@
  * @properties={typeid:24,uuid:"CF9C328B-AB11-4A2F-BB68-AD8EFD8886BF"}
  */
 function getParent() {
-	return forms.svyExtraComponentsMain;
+	return forms.commonComponentFieldSamples;
 }
 
 /**
@@ -46,9 +46,9 @@ function getWebSiteURL() {
  * @properties={typeid:24,uuid:"AEADD915-C6FE-4F55-AEC9-D9C2CC33B001"}
  */
 function getSampleCode() {
-	return printMethodCode(forms.select2Tokenizer.onFocusGained)
-		.concat(printMethodCode(forms.select2Tokenizer.onFocusLost))
-		.concat(printMethodCode(forms.select2Tokenizer.onAction))	
+	return printMethodCode(onFocusGained)
+		.concat(printMethodCode(onFocusLost))
+		.concat(printMethodCode(onAction))	
 }
 
 /**
