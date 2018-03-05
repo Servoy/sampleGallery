@@ -53,3 +53,7 @@
 [submodule "svywebcam"]
 	path = svywebcam
 	url = https://github.com/Servoy/svywebcam.git
+[submodule "svyThemeRoller"]
+	path = svyThemeRoller
+	url = https://github.com/Servoy/svyThemeRoller.git
+	branch = master
