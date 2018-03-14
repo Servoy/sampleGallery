@@ -1,4 +1,5 @@
 encapsulation:60,
+extendsID:"1046CC5D-E653-4F9C-B8B9-E3FCDA83A211",
 items:[
 {
 anchors:15,
@@ -36,13 +37,13 @@ typeid:7,
 uuid:"4C938FB2-73B6-4BFD-9536-AFE3753BCBBF"
 },
 {
+extendsID:"CCD8084B-3484-41E7-8FBA-CBF44DD9BF67",
 height:601,
-partType:5,
 typeid:19,
 uuid:"E9E980F3-15C8-4213-A5A1-7E654E070E37"
 }
 ],
-name:"main",
+name:"mainBtsTest",
 navigatorID:"-1",
 showInMenu:true,
 size:"733,601",
