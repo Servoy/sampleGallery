@@ -1,0 +1,13 @@
+customProperties:"formComponent:false",
+extendsID:"738265F0-1B3F-4668-841A-810A9985E26A",
+items:[
+{
+allowBreakAcrossPageBounds:false,
+extendsID:"10844138-DBD7-4639-8719-D8FD7F00BB46",
+typeid:19,
+uuid:"FD71EDFD-C2EB-4E94-83F0-39182D3D81F5"
+}
+],
+name:"sidenavSlideMenu",
+typeid:3,
+uuid:"CA8A2B78-E79E-4A59-8F67-F7D263F46FE2"

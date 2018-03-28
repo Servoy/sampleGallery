@@ -1,0 +1,41 @@
+.svy-tabpanel > .tab-content > .tab-pane > div > svy-formload > .svy-form {
+	height: 100%; /* Default form to 100% height */
+}
+
+
+.red {
+/* 	background-color: rgba(0,0,200,0.1);
+ */}
+ 
+ .red-item { background: red; }
+ 
+ 
+ .side-split {
+    height: 800px;
+	/* display: table; */
+ }
+ 
+ .side-left {
+ 	max-width: 200px;
+ 	float: left;
+ }
+ 
+ .side-right {
+	height: 100%;
+ 	background: red;
+ 	overflow-x: hidden;
+ }
+ 
+.group {
+  background: #eaeaed;
+  border-radius: 6px;
+  *zoom: 1;
+}
+
+.svy-layoutcontainer .svy-sidenav {
+	/* width: 150px; */
+}
+ 
+.responsive-form {
+	background-color: #0080ff;
+}
