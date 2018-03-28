@@ -2,7 +2,7 @@ firstFormID:"26F4D284-0209-4BC5-A16D-45EC274FCF0E",
 i18nDataSource:"db:/fullcalendar/tbl_i18n",
 loginFormID:"-1",
 modulesNames:"svyMicroSamples,svyUtils,exampleCSS,exampleFilter,svyBlockUiDemo,svyChartJSExample,svyCryptoExample,svyKeyListenerExample,svySearchExample,webNotificationsExample,exampleSharedWebPackages,fullcalendarComponentSample,svyWebStorageExample,svyRecaptcha,svyGroupingGridDemo,bootstrapExtraComponentsDemo,twelveGridLayoutSample,svyPDFViewerExample,svyExampleBasicComponents,svyExtraComponents,webCamExample",
-onOpenMethodID:"-1",
+onOpenMethodID:"0E3E1FC5-A8CA-4EE0-9782-17D5629658D1",
 styleSheetID:"A060BE9A-592F-49BF-A6FC-9F46ADFA6356",
 typeid:43,
 uuid:"C7858F59-B069-4688-95B6-4B6D231A8EF4"
