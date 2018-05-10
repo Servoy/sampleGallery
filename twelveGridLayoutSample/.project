@@ -4,13 +4,13 @@
 	<comment></comment>
 	<projects>
 		<project>resources</project>
-		<project>12grid</project>
 		<project>handdrawn</project>
 		<project>exampleDataModel</project>
 		<project>svyMicroSamples</project>
 		<project>bootstrapextracomponents</project>
 		<project>svySearch</project>
 		<project>servoy-extra-components</project>
+		<project>exampleSharedWebPackages</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
