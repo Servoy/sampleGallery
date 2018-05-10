@@ -12,8 +12,7 @@ function showInfo() {
 /**
  * Perform the element default action.
 
- * @private
- * @override 
+ * @private 
  * @return {Array<String>}
  * @properties={typeid:24,uuid:"FA88F057-2922-4C29-8784-F85FD2AAAD4E"}
  */
