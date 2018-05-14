@@ -200,7 +200,7 @@ function convertServoyTableFormToAgGrid(formName, save, prefix) {
 			}
 
 			// get the table
-			agTable = baseForm.getWebComponent("table");
+			agTable = jsForm.getWebComponent("table");
 			if (!agTable) {
 				return false;
 			}
