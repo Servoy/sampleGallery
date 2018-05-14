@@ -4,6 +4,12 @@
 var log = scopes.svyLogManager.getLogger("servoy.bap.grid.utils");
 
 /**
+ * @private 
+ * @properties={typeid:35,uuid:"9DACA599-5F0A-4CDE-BCD8-3E25FC2D3380",variableType:-4}
+ */
+var convertedForms = [];
+
+/**
  * @properties={typeid:24,uuid:"022B055B-061C-4416-9F9B-F49AA72E4339"}
  */
 function convertServoyTableForms(prefix) {
@@ -13,7 +19,7 @@ function convertServoyTableForms(prefix) {
 	for (var i = 0; i < allForms.length; i++) {
 
 		var jsForm = allForms[i];
-		if (jsForm.view == JSForm.LOCKED_TABLE_VIEW) {
+		if (jsForm.view == JSForm.LOCKED_TABLE_VIEW || (jsForm.extendsForm && convertedForms.indexOf(jsForm.extendsForm.name)) > -1) {
 			convertServoyTableFormToAgGrid(jsForm.name, true, prefix)
 		}
 	}
@@ -37,7 +43,8 @@ function convertServoyTableFormToAgGrid(formName, save, prefix) {
 		jsForm = newForm;
 	}
 
-	if (jsForm.view == JSForm.LOCKED_TABLE_VIEW) {
+	// TODO FIXME
+	if (jsForm.view == JSForm.LOCKED_TABLE_VIEW || (jsForm.extendsForm && convertedForms.indexOf(jsForm.extendsForm.name)) > -1) {
 
 		var columns = [];
 
@@ -230,6 +237,7 @@ function convertServoyTableFormToAgGrid(formName, save, prefix) {
 		if (save) {
 			servoyDeveloper.save(jsForm);
 		}
+		convertedForms.push(jsForm.name);
 		return true;
 	} else {
 		return false;
