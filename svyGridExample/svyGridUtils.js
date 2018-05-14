@@ -19,7 +19,8 @@ function convertServoyTableForms(prefix) {
 	for (var i = 0; i < allForms.length; i++) {
 
 		var jsForm = allForms[i];
-		if (jsForm.view == JSForm.LOCKED_TABLE_VIEW || (jsForm.extendsForm && convertedForms.indexOf(jsForm.extendsForm.name)) > -1) {
+		// TODO FIXME won't work if the table extends 2 base forms
+		if (jsForm.view == JSForm.LOCKED_TABLE_VIEW || (jsForm.extendsForm && convertedForms.indexOf(jsForm.extendsForm.name) > -1)) {
 			convertServoyTableFormToAgGrid(jsForm.name, true, prefix)
 		}
 	}
@@ -43,8 +44,8 @@ function convertServoyTableFormToAgGrid(formName, save, prefix) {
 		jsForm = newForm;
 	}
 
-	// TODO FIXME
-	if (jsForm.view == JSForm.LOCKED_TABLE_VIEW || (jsForm.extendsForm && convertedForms.indexOf(jsForm.extendsForm.name)) > -1) {
+	// TODO FIXME won't work if the table extends 2 base forms
+	if (jsForm.view == JSForm.LOCKED_TABLE_VIEW || (jsForm.extendsForm && convertedForms.indexOf(jsForm.extendsForm.name) > -1)) {
 
 		var columns = [];
 
@@ -142,6 +143,8 @@ function convertServoyTableFormToAgGrid(formName, save, prefix) {
 			}
 
 		}
+		
+		// TODO FIXME: column Orders
 
 		// iterate all labels and buttons
 		for (var i = 0; i < allLabels.length; i++) {
@@ -153,7 +156,7 @@ function convertServoyTableFormToAgGrid(formName, save, prefix) {
 				if (jsField) { // label for a RuntimeField
 
 					if (elementsInColumns.indexOf(jsField.name) == -1) {
-						addComponent(jsField, JSColumn, COMPONENT_TYPES.FIELD);
+						addComponent(jsField, jsLabel, COMPONENT_TYPES.FIELD);
 					} else {
 						// set the title for an existing field
 						setColumnLabel(jsLabel, jsField)
