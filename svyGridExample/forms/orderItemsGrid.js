@@ -1,4 +1,12 @@
 /**
+ * @properties={typeid:24,uuid:"ED5D6FA4-F7AC-4EFD-87F7-2406EFB47B00"}
+ * @override
+ */
+function onCellClick(foundsetIndex, columnIndex, record, event) {if (columnIndex == 3) { 
+showProduct(event);
+ }
+}
+/**
  * Perform the element default action.
  *
  * @param {JSEvent} event the event that triggered the action
