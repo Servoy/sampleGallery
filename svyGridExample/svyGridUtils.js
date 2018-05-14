@@ -4,17 +4,39 @@
 var log = scopes.svyLogManager.getLogger("servoy.bap.grid.utils");
 
 /**
+ * @properties={typeid:24,uuid:"022B055B-061C-4416-9F9B-F49AA72E4339"}
+ */
+function convertServoyTableForms(prefix) {
+
+	var allForms = solutionModel.getForms();
+
+	for (var i = 0; i < allForms.length; i++) {
+
+		var jsForm = allForms[i];
+		if (jsForm.view == JSForm.LOCKED_TABLE_VIEW) {
+			convertServoyTableFormToAgGrid(jsForm.name, true, prefix)
+		}
+	}
+}
+
+/**
  * @param {String} formName
  * @param {Boolean} save
+ * @param {String} prefix
  * @public
  * @properties={typeid:24,uuid:"97FDD003-B058-42A1-ACD8-626E15D0B03A"}
  */
-function convertServoyTableFormToAgGrid(formName, save) {
+function convertServoyTableFormToAgGrid(formName, save, prefix) {
 
 	var jsForm = solutionModel.getForm(formName);
 
-	var newForm = solutionModel.cloneForm("test_" + formName, jsForm);
-	jsForm = newForm;
+	var newFormName = formName;
+	if (prefix) {
+		newFormName = prefix + formName;
+		var newForm = solutionModel.cloneForm(newFormName, jsForm);
+		jsForm = newForm;
+	}
+
 	if (jsForm.view == JSForm.LOCKED_TABLE_VIEW) {
 
 		var columns = [];
@@ -55,7 +77,7 @@ function convertServoyTableFormToAgGrid(formName, save) {
 				return null;
 			}
 		}
-		
+
 		/* Get an existin column */
 		function getColumnByName(fieldName) {
 			if (fieldName) {
@@ -81,15 +103,14 @@ function convertServoyTableFormToAgGrid(formName, save) {
 		}
 
 		var elementsInColumns = [];
-		
-		/** add the component to the list of columns 
+
+		/** add the component to the list of columns
 		 * @param {JSField} colJSField
 		 * @param {JSLabel} colJSLabel
 		 * @param {String} type
-		 * 
+		 *
 		 * */
 		function addComponent(colJSField, colJSLabel, type) {
-
 
 			// if doesn't exist
 			if (elementsInColumns.indexOf(colJSField.name) == -1) {
@@ -100,13 +121,13 @@ function convertServoyTableFormToAgGrid(formName, save) {
 				} else {
 					newCol = convertFieldToAgGridColumn(colJSField, colJSLabel);
 				}
-				
+
 				if (colJSField.onAction) {
 					var onActionBlock = "if (columnIndex == " + columns.length + ") { \n" + colJSField.onAction.getName() + "(event);\n }\n";
 					onCellClickBody += onActionBlock;
 				}
-				
-				addColumn(newCol, colJSField, colJSLabel);				
+
+				addColumn(newCol, colJSField, colJSLabel);
 
 			} else {
 				// Skip it, already exists
@@ -114,7 +135,6 @@ function convertServoyTableFormToAgGrid(formName, save) {
 			}
 
 		}
-
 
 		// iterate all labels and buttons
 		for (var i = 0; i < allLabels.length; i++) {
@@ -170,9 +190,33 @@ function convertServoyTableFormToAgGrid(formName, save) {
 		}
 
 		// TODO check if a table component already exists
-		var agTable = jsForm.newWebComponent("table", "aggrid-groupingtable", 0, jsBody.getPartYOffset(), jsForm.width, jsBody.height);
+		// TODO check if the table extends another form having the table
+		var agTable;
+		if (jsForm.extendsForm) {
+			/** @type {JSForm} */
+			var baseForm = jsForm.extendsForm;
+			if (baseForm.view == JSForm.LOCKED_TABLE_VIEW) {
+				convertServoyTableFormToAgGrid(baseForm.name, save, prefix);
+			}
+
+			// get the table
+			agTable = baseForm.getWebComponent("table");
+			if (!agTable) {
+				return false;
+			}
+
+			agTable.x = 0;
+			agTable.y = jsBody.getPartYOffset();
+
+			agTable.width = jsForm.width;
+			agTable.height = jsBody.height;
+
+		} else {
+			agTable = jsForm.newWebComponent("table", "aggrid-groupingtable", 0, jsBody.getPartYOffset(), jsForm.width, jsBody.height);
+			agTable.anchors = SM_ANCHOR.ALL;
+		}
+
 		agTable.setJSONProperty("columns", columns);
-		agTable.anchors = SM_ANCHOR.ALL;
 
 		var onCellClickScript = "function onCellClick(foundsetIndex, columnIndex, record, event) {" + onCellClickBody + "}"
 		var onCellClickMethod = jsForm.newMethod(onCellClickScript);
