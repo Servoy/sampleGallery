@@ -7,3 +7,7 @@
 	border-radius: 10px;
 	text-align: center;
 }
+
+.ag-table .ag-body .ag-cell-value {
+    line-height: 54px;
+}
