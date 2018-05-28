@@ -26,6 +26,28 @@ function initNav(){
 			iconStyleClass:'fa fa-home svy-sidenav-font-icon',
 			data:{formName:'home'}
 		},
+		{
+			id: 'dashboard', 
+			text:'Complete Dashboard', 
+			iconStyleClass:'fa fa-tachometer svy-sidenav-font-icon',
+			data:{formName:'ordersDashboard'}
+		},
+		
+		/*
+		{
+			id: 'dashboard-lazy', 
+			text:'Lazy Dashboard', 
+			iconStyleClass:'fa fa-tachometer svy-sidenav-font-icon',
+			data:{formName:'ordersDashboardLazy'}
+		},
+		*/
+		
+		{
+			id: 'dashboard-aggregated', 
+			text:'Summarized Dashboard', 
+			iconStyleClass:'fa fa-tachometer svy-sidenav-font-icon',
+			data:{formName:'ordersDashboardAggregated'}
+		},
 		
 		{divider:true, styleClass:'svy-sidenav-divider'},
 		
@@ -68,6 +90,13 @@ function initNav(){
 			iconStyleClass:'fa fa-plane svy-sidenav-font-icon',
 			data:{}
 		}
+//		,
+//		{
+//			id: 'addresses', 
+//			text:'Addresses', 
+//			iconStyleClass:'fa fa-address-card-o svy-sidenav-font-icon',
+//			data:{formName:'agGridGroupingInfinite'}
+//		}
 	];
 	
 	elements.nav.setRootMenuItems(items);
@@ -78,8 +107,9 @@ function initNav(){
 		id: 'settings', 
 		text:'Settings', 
 		iconStyleClass:'fa fa-gear  svy-sidenav-font-icon',
-		data:{formName:'settings'}
+		data:{formName:'Settings'}
 	});
+	
 	
 	
 	

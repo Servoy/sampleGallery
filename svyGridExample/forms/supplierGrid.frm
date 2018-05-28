@@ -4,6 +4,12 @@ encapsulation:60,
 extendsID:"340D5D9F-5E6A-4E20-B3F6-E211FEB7D1A9",
 items:[
 {
+extendsID:"BE980EFB-73BF-4DB0-A681-2B5BEA520C64",
+typeid:7,
+uuid:"05EA1D1B-CC16-4EFE-A2AD-8D84EAF71C3A",
+visible:false
+},
+{
 customProperties:"methods:{\
 onCellClick:{\
 arguments:null,\

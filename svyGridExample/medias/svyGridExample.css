@@ -11,3 +11,57 @@
 .ag-table .ag-body .ag-cell-value {
     line-height: 54px;
 }
+
+.label-tag.ag-cell-value > span {
+    margin: 14px 5px;
+    display: block;
+}
+ 
+.label-tag > span {
+    font-size: 12px;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 2px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    text-transform: uppercase;
+    /* margin: 14px 5px; */
+    line-height: 20px;
+    vertical-align: middle;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+/* TODO move to .less */
+.ag-row-group.ag-row-level-0 {
+    color: #4880FF;
+    background-color: #F9F9F9;
+}
+.ag-table .ag-row {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #F5F5F5;
+}
+
+/* .ag-table .ag-cell {
+    padding-left: 15px;
+} */
+.ag-row-group > .ag-cell {
+    font-weight: bold;
+    /* font-size: 16px; */
+    /* overflow: visible; */
+}
+
+.ag-tool-panel .ag-column-drop .ag-column-drop-cell {
+    padding-left: 10px;
+    line-height: 32px;
+}
+
+.ag-row-group .ag-group-child-count {
+    border: 1px solid #4880FF;
+    border-color: inherit;
+    border-radius: 50px;
+    font-size: 12px;
+    margin-left: 4px;
+    padding: 2px 6px;
+}

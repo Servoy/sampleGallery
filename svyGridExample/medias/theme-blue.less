@@ -1,5 +1,5 @@
 /* main theme color; should be called primary ? */
-@main-color:#E9720B; /*#3590E1;*/							/* Main color */
+@main-color: green;							/* Main color */
 @main-color-inverse: #FFF;						/* Main color inverse */
 @main-color-light: lighten(@main-color, 10%); 	/* Main color light lighten(@main-color, 28%); #F9DB89 */
 @main-color-dark: darken(@main-color, 15%); 	/* Main color dark EB8C39 */
@@ -36,7 +36,7 @@
 @field-disabled-bg : @field-bg;					/* Field disabled bg */
 @field-color: @text-color;  					/* Field color #4A4A4A */
 @field-addon-bg: @field-bg;						/* Field addon bg */
-@field-border-width: 0 0 @border-width 0;		/* Field width */
+@field-border-width: 1px 1px @border-width 1px;		/* Field width */
 
 /* Tabs */
 @tab-bg: @body-bg-inverse;
@@ -506,6 +506,12 @@ fieldset[disabled] input[type="checkbox"] + span:before {
 	background-color: @main-color;
 }
 
+
+/* Badge */
+.btn-filter .badge {
+    background-color: @main-color;
+}
+
 /* TabPanel */
 .svy-tabpanel > .nav-tabs,
 .bts-tabpanel > .nav-tabs {
@@ -745,7 +751,7 @@ data-servoyextra-fontawesome > div {
 
 .ui-grid-row-selected div.ui-grid-cell .svy-label,
 .ui-grid-row-selected div.ui-grid-cell .bts-label {
-	color: #FFF;
+	color: @main-color-inverse;
 }
 
 .ui-grid-row-selected .ui-grid-cell .svy-field,
@@ -764,7 +770,7 @@ data-servoyextra-fontawesome > div {
 .ui-grid-row-selected .ui-grid-cell .bts-calendar input {
 	outline: @main-color;
 	background-color: inherit;
-	color: #FFF; /* TODO define inverse color for selected */
+	color: @main-color-inverse; /* inverse color for selected */
 }
 
 .ui-grid-row-selected .ui-grid-cell .bts-select, .ui-grid-row-selected .ui-grid-cell .bts-select ~ .input-group-addon,
@@ -811,7 +817,7 @@ data-servoyextra-fontawesome > div {
 .table-bootstrapcomponent-selected,
 .table-servoyextra-selected {
 	background-color: @main-color;
-	color: #FFF; /* TODO define inverse color for selected */
+	color: @main-color-inverse; /* inverse color for selected */
 }
 
 .svy-table  th,
@@ -853,8 +859,86 @@ data-servoyextra-fontawesome > div {
 
 .ag-table .ag-row-selected {
 	background-color: @main-color;
-	color: #FFF;
+	color: @main-color-inverse;
 }
+
+.ag-table .ag-cell-inline-editing input {
+	color: @field-color;
+}
+
+.ag-table .ag-cell.font-icon {
+    padding: 0 8px;
+}
+
+
+/* AG Grid Tool Panel */
+
+.ag-tool-panel .ag-column-select-panel .ag-column-name-filter {
+	
+}
+
+.ag-tool-panel .ag-column-drop {
+    clear: both;
+    overflow: auto;
+    padding: 4px 0;
+    padding-bottom: 8px;
+}
+
+.ag-table .ag-column-drop.ag-column-drop-horizontal .ag-right-arrow {
+	padding: 0 4px;
+	display: none;
+}
+
+.ag-table .ag-column-drop.ag-column-drop-horizontal .ag-column-drop-cell .ag-column-drop-cell-button:after {
+    font-family: FontAwesome;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    content: "\f054";
+    vertical-align: middle;
+}
+
+.ag-tool-panel .ag-column-drop .ag-column-drop-cell {
+    padding-left: 10px;
+    /*line-height: 32px;*/
+    display: block;
+}
+
+.ag-table .ag-column-drop .ag-column-drop-cell-text,
+.ag-tool-panel .ag-column-drop .ag-column-drop-cell-text {
+    border: 1px @border-style @border-color;
+    padding: 4px 16px;
+    border-radius: @border-radius;
+}
+
+.ag-tool-panel .ag-column-drop .ag-column-drop-cell .ag-column-drop-cell-button {
+    float: initial;
+}
+
+.ag-column-drop-empty-message, .ag-column-drop .ag-column-drop-cell:last-child:after {
+    content: "Drop a column";
+    border: 1px dashed @border-color;
+    color: @text-color;
+    border-radius: @border-radius;
+    padding: 4px 16px;
+    display: inline-block;
+    line-height: 20px;
+}
+
+/* AG Grid side panel */
+.ag-table .ag-tool-panel > .ag-side-buttons > button {
+	webkit-appearance:none;
+	-webkit-appearance: none;
+    background: none;
+    border: none;
+}
+
+.ag-table .ag-tool-panel > .ag-side-buttons> button:before {
+    content: "\f0c9";
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+}
+
 
 /* Popup */
 .yuimenu {
@@ -1076,6 +1160,14 @@ data-servoyextra-fontawesome > div {
 }
 
 /* Typography */
+.text-center {
+	text-align: center;
+}
+
+.text-uppercase {
+	text-transform: uppercase;
+}
+
 .label-primary
 .label-success,
 .label-info, 
@@ -1092,10 +1184,6 @@ data-servoyextra-fontawesome > div {
 .btn-warning,
 .btn-danger {
 	color: #FFF;
-}
-
-.text-center {
-	text-align: center;
 }
 
 .bts-label.text-center {
@@ -1134,6 +1222,9 @@ data-servoyextra-fontawesome > div {
 }
 
 /* Buttons */
+.btn-round {
+	border-radius: 50px;
+}
 
 /* Fields */
 .form-default {

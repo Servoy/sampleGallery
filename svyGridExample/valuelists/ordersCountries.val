@@ -1,0 +1,10 @@
+addEmptyValue:1,
+customProperties:"lazyLoading:false",
+dataProviderID1:"shipcountry",
+dataSource:"db:/example_data/orders",
+name:"ordersCountries",
+returnDataProviders:1,
+showDataProviders:1,
+typeid:34,
+uuid:"FD5E1044-813E-4287-9C60-64B71012D2D4",
+valueListType:1

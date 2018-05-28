@@ -24,6 +24,12 @@ typeid:19,
 uuid:"580C5B25-7AF0-4DA8-B9DC-6F73BB021706"
 },
 {
+extendsID:"BE980EFB-73BF-4DB0-A681-2B5BEA520C64",
+typeid:7,
+uuid:"9B8133C8-C443-4FC3-872D-AAA46E055D7A",
+visible:false
+},
+{
 customProperties:"methods:{\
 onCellClick:{\
 arguments:null,\

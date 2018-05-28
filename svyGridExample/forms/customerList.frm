@@ -49,6 +49,12 @@ typeid:19,
 uuid:"46BA8474-6FA3-4E15-A10E-DEC49890982C"
 },
 {
+extendsID:"BE980EFB-73BF-4DB0-A681-2B5BEA520C64",
+typeid:7,
+uuid:"75455C4B-E02F-442B-B1B7-6345B97C59BA",
+visible:false
+},
+{
 extendsID:"C2930900-60E7-42E9-A62D-A86F3018F3A8",
 json:{
 visible:false

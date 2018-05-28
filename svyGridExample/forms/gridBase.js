@@ -189,14 +189,14 @@ function persistTableView() {
 function lookupTableView(event) {
 	application.setValueListItems("views", getStoredViews());
 
-	var lookup = scopes.svyLookup.createValuelistLookup("views");
+	var lookup = scopes.svyLookup.createValuelistLookup("views", "Select a view..");
 	lookup.setLookupFormProvider(forms.svyLookupTableCreate);
 
 	lookup.onAfterRecordCreate = onAfterRecordViewCreate;
 
 	var element = event.getSource();
 	var value = lookup.showPopUp(lookupViewCallback, element, 300, 400)
-	application.output(value);
+	application.output(value);	
 }
 
 /**
@@ -222,6 +222,7 @@ function onAfterRecordViewCreate(record, text, lookupParams) {
 function lookupViewCallback(records, values, lookup) {
 	if (values && values.length) {
 		activeView = values[0];
+		elements.btnView.text = activeView;
 		var state = getStoredView(values[0]);
 		if (state) {
 			elements.table.restoreColumnState(state);
@@ -240,7 +241,6 @@ function lookupViewCallback(records, values, lookup) {
  */
 function onActionSelectView(event) {
 	lookupTableView(event);
-	elements.btnView.text = activeView
 }
 
 /**

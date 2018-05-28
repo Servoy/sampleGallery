@@ -3,6 +3,12 @@ dataSource:"db:/example_data/orders",
 extendsID:"340D5D9F-5E6A-4E20-B3F6-E211FEB7D1A9",
 items:[
 {
+extendsID:"BE980EFB-73BF-4DB0-A681-2B5BEA520C64",
+typeid:7,
+uuid:"189FD7A1-9FAE-4512-B40B-FF0EB0D49CD3",
+visible:false
+},
+{
 extendsID:"94570443-D0A0-42D1-BDD0-7DC31501EC66",
 typeid:7,
 uuid:"3778F27B-920A-4509-9D4F-7591B018B39B",

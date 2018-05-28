@@ -1,0 +1,9 @@
+customProperties:"formComponent:false,\
+layout:{\
+responsive:true\
+}",
+dataSource:"db:/example_data/orders",
+extendsID:"-1",
+name:"ordersTableViewREST",
+typeid:3,
+uuid:"7A005653-A6E1-4C28-A6D8-701DC2E74249"

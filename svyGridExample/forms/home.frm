@@ -9,10 +9,11 @@ uuid:"37FE074E-0A52-4968-BBD0-9C9AD6239ADE"
 },
 {
 anchors:15,
+horizontalAlignment:0,
+imageMediaID:"DEEAB9C5-B1C3-406E-894F-6BD249DF6F4D",
 location:"160,90",
+mediaOptions:14,
 size:"310,269",
-styleClass:"welcome",
-text:"Welcome",
 typeid:7,
 uuid:"95FEBA23-2C7C-4236-B456-4DA1E9ABE432",
 verticalAlignment:0

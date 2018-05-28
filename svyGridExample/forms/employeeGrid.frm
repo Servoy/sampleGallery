@@ -68,6 +68,12 @@ uuid:"61161EAA-AE36-4C97-9612-1B32686111A9",
 visible:false
 },
 {
+extendsID:"BE980EFB-73BF-4DB0-A681-2B5BEA520C64",
+typeid:7,
+uuid:"F2B4DD1C-1FF5-47BC-9024-C3C8CD85B0BF",
+visible:false
+},
+{
 extendsID:"C2930900-60E7-42E9-A62D-A86F3018F3A8",
 json:{
 visible:false

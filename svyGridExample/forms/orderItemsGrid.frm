@@ -36,7 +36,7 @@ enableSort:true,
 format:null,
 headerStyleClass:null,
 headerTitle:"Product",
-rowGroupIndex:-1,
+rowGroupIndex:0,
 styleClass:null,
 svyUUID:"8C053134-2660-476A-9893-9A6F472B334B",
 valuelist:"1F460D44-8F26-41CC-9B41-7843677D3B6F",
@@ -51,7 +51,7 @@ enableSort:true,
 format:null,
 headerStyleClass:null,
 headerTitle:"Price",
-rowGroupIndex:-1,
+rowGroupIndex:1,
 styleClass:null,
 svyUUID:"9FE37F60-3BF1-4F47-A933-31D13A179CE6",
 visible:true
@@ -97,6 +97,9 @@ rowGroupIndex:-1,
 styleClass:null,
 svyUUID:"66212C39-B0BF-42B4-A6FF-6066E1B205A5",
 visible:true
+},
+{
+svyUUID:"AFFB488B-E9A3-4B09-BF71-CD2F848D8C27"
 }
 ],
 onCellClick:"ED5D6FA4-F7AC-4EFD-87F7-2406EFB47B00"

@@ -12,7 +12,7 @@
  */
 function onSolutionOpen(arg, queryParams) {
 	scopes.svyThemeRoller.addLESSFileDependancy("themes/theme-servoy.less");
-	scopes.svyThemeRoller.addLESSFileDependancy("theme-blue.less");
+//	scopes.svyThemeRoller.addLESSFileDependancy("theme-blue.less");
 
 	scopes.svyThemeRoller.initLessJS();
 }
