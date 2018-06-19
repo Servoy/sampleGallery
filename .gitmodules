@@ -53,3 +53,7 @@
 [submodule "svywebcam"]
 	path = svywebcam
 	url = https://github.com/Servoy/svywebcam.git
+[submodule "custom-rendered-components"]
+	path = custom-rendered-components
+	url = https://github.com/Servoy/custom-rendered-components.git
+	branch = master
