@@ -75,11 +75,11 @@ specname:\"column\"\
 items:[
 {
 json:{
-styleClass:"label_header_1 full_width",
+styleClass:"label_header_1 full-width",
 text:"Title"
 },
 name:"button",
-styleClass:"label_header_1 full_width",
+styleClass:"label_header_1 full-width",
 typeName:"bootstrapcomponents-button",
 typeid:47,
 uuid:"27DAC496-CB87-4206-9AC5-4A2CC67B88CD"

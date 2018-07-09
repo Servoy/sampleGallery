@@ -24,7 +24,7 @@ onActionMethodID:"3D5CDD21-3A6E-4383-A349-6785C38D4BF0",
 onDoubleClickMethodID:"-1",
 onRightClickMethodID:"-1",
 size:"80,42",
-styleClass:"my-button",
+styleClass:"btn btn-primary",
 text:"Disable",
 typeid:7,
 uuid:"31B8F935-21DC-4C4C-BAF9-FB460B0DA3EE"
