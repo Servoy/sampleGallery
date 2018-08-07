@@ -1,7 +1,7 @@
 Feature: Testing the Servoy Sample Galery - Cryptography
     Scenario Outline: Protractor and Cucumber Test
 
-Given I go to the test domain
+Given I navigate to the test domain
 When servoy sidenav component with name galleryMain.nav tab Working with Data is clicked
 When servoy sidenav component with name galleryMain.nav tab Cryptography is clicked
 When servoy combobox component with name exampleCrypto.algorithm is clicked

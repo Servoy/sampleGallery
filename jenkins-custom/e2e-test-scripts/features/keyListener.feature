@@ -1,7 +1,7 @@
 Feature: Testing the Servoy Sample Galery - Keylistener component
     Scenario Outline: Protractor and Cucumber Test
 
-Given I go to the test domain
+Given I navigate to the test domain
 When servoy sidenav component with name galleryMain.nav tab Browser Integrations is clicked
 When servoy sidenav component with name galleryMain.nav tab Key Listener is clicked
 
