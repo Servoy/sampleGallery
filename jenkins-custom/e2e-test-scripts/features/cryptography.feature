@@ -5,7 +5,7 @@ Given I go to http://tomcat.demo.servoy-cloud.eu/sampleGallery/solutions/sampleG
 When servoy sidenav component with name galleryMain.nav tab Working with Data is clicked
 When servoy sidenav component with name galleryMain.nav tab Cryptography is clicked
 When servoy combobox component with name exampleCrypto.algorithm is clicked
-When servoy combobox component the text <algorithm> is inserted
+When servoy combobox component I want to select the combobox item with the text <algorithm>
 When servoy button component with name exampleCrypto.generateKey is clicked
 When default textarea component with name exampleCrypto.plainText the text secret code is inserted
 When servoy button component with name exampleCrypto.svy_ is clicked
