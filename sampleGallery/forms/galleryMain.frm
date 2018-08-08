@@ -19,6 +19,14 @@ uuid:"0BE32856-1FBE-4ECF-9FA2-D3376455C892",
 verticalAlignment:0
 },
 {
+background:"#ffffff",
+location:"175,35",
+size:"80,20",
+text:"Hello!",
+typeid:7,
+uuid:"4D9E0818-E077-4FCC-B811-4D4A126F35E9"
+},
+{
 anchors:11,
 dataProviderID:"title",
 horizontalAlignment:0,
