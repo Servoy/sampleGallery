@@ -30,6 +30,14 @@ typeid:7,
 uuid:"7206B72E-F711-41FD-9B29-CEB372D3FCD9"
 },
 {
+foreground:"#ffffff",
+location:"171,39",
+size:"80,20",
+text:"Hello!",
+typeid:7,
+uuid:"73950171-5147-400F-AA41-A6D071432C6E"
+},
+{
 anchors:15,
 json:{
 anchors:15,
