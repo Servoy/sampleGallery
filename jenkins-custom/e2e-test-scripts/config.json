@@ -1,11 +1,8 @@
 {
     "configurations":{
         "capabilities":{
-            
-        },
-        "multiCapabilities": [{
             "browserName": "chrome"
-          }],
+        },
 
         "specs": [
             "./features/*.feature"
