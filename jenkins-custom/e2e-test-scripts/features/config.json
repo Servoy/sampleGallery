@@ -5,7 +5,7 @@
         },
 
         "specs": [
-            "./features/*.feature"
+            "./features/calendar.feature"
         ]
     }
 }
