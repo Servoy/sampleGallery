@@ -8,7 +8,7 @@ When servoy combobox component with name exampleHash.algrothim is clicked
 When servoy combobox component I want to select the combobox item with the text <hash>
 When default textarea component with name exampleHash.plainText the text secret code is inserted
 When servoy button component with name exampleHash.hashValue is clicked
-When I want to log the time it toke to do the hashing event
+When I want to log the time it took to do the hashing event
 
 @data_table_servoy
 Examples:
