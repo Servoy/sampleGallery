@@ -5,6 +5,7 @@ var EC = protractor.ExpectedConditions;
 var element = browser.element;
 var startDate = new Date();
 var tempDate;
+var test = require('../custom_scripts/test');
 
 defineSupportCode(({ Given, Then, When, Before, After }) => {
     Then('I want to do a custom step', {timeout: 30 * 1000}, function(callback) {
