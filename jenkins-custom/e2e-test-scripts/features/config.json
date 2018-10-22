@@ -1,18 +1,10 @@
 {
     "configurations":{
         "multiCapabilities": [{
-            "browserName": "internet explorer",
-            "version": 11,
-            "javascriptEnabled": true,
-            "ensureCleanSession":true,
-            "ignoreProtectedModeSettings": true
-
-          }, {
             "browserName": "chrome"
           }, {
             "browserName": "firefox"
           }],
-
         "specs": [
             "./features/*.feature"
         ]
