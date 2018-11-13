@@ -3,7 +3,7 @@ Feature: Testing the Servoy Sample Galery - Foundset
 
 
 # Given I setup the environment
-Given I go to http://tomcat.demo.servoy-cloud.eu/sampleGallery/solutions/sampleGallery/index.html?f=galleryMain
+Given I navigate to the test domain
 When servoy sidenav component with name galleryMain.nav tab <tab> is clicked
 When servoy sidenav component with name galleryMain.nav tab Basic Filtering is clicked
 
