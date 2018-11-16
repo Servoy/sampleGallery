@@ -7,11 +7,11 @@ Given I navigate to the test domain
 When servoy sidenav component with name galleryMain.nav tab <tab> is clicked
 When servoy sidenav component with name galleryMain.nav tab Basic Filtering is clicked
 
-When servoy calendar component with name filterOrdersList.startDate is clicked
-When servoy calendar component I want to select <day> <startMonth> <startYear>
+# When servoy calendar component with name filterOrdersList.startDate is clicked
+# When servoy calendar component I want to select <day> <startMonth> <startYear>
 
-When servoy calendar component with name filterOrdersList.endDate is clicked
-When servoy calendar component I want to select <day> <endMonth> <endYear>
+# When servoy calendar component with name filterOrdersList.endDate is clicked
+# When servoy calendar component I want to select <day> <endMonth> <endYear>
 
 #add customers
 When servoy select2tokenizer component with name filterOrdersList.customerFilter is clicked
