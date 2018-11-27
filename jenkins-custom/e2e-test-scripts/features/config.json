@@ -1,6 +1,9 @@
 {
     "configurations":{
-        "multiCapabilities": [{ 
+        "multiCapabilities": [{
+            "browserName": "chrome",
+            "chromeOptions": { "args": [ "--headless", "--disable-gpu"] }
+          },{ 
             "browserName": "firefox",
             "moz:firefoxOptions": {
                 "args": [ "--headless" ]
