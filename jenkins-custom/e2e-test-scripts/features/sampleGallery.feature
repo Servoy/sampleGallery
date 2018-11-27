@@ -5,7 +5,6 @@ Background: Set synchroinization to true
 
 Scenario Outline: Testing the Agenda Component
 
-    When I want to set the synchronization to true
     When servoy sidenav component with name galleryMain.nav tab Specialized Components is clicked
     When servoy sidenav component with name galleryMain.nav tab Fullcalendar Component is clicked
     When servoy agenda component with name demoCalendar I want to see my appointments on <day> <month> <year>
