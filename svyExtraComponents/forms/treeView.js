@@ -2,7 +2,7 @@
  * @properties={typeid:24,uuid:"52EFD779-1091-48F8-89E3-3749E55ABA65"}
  */
 function getParent() {
-	return forms.svyExtraComponentsMain;
+	return forms.commonComponentTreeView;
 }
 
 /**
@@ -63,7 +63,7 @@ function loadTree(event) {
 		var products = category.categories_to_products;
 		for (var j = 1; j <= products.getSize(); j++) {
 			var product = products.getRecord(j);
-			ds.addRow([product.categoryid, category.categoryid, productImage, product.productname]);
+			ds.addRow([product.categoryid, category.categoryid, productImage, '<b>' + product.productname + '</b> ' + product.unitprice + ' €']);
 		}
 	}
 	

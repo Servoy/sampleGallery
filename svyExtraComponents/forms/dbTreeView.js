@@ -2,7 +2,7 @@
  * @properties={typeid:24,uuid:"4FB4CC43-5294-4093-87B6-FAC9AA2559EC"}
  */
 function getParent() {
-	return forms.svyExtraComponentsMain;
+	return forms.commonComponentTreeView;
 }
 
 /**
