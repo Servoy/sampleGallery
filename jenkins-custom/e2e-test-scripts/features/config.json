@@ -1,11 +1,19 @@
 {
     "configurations":{
         "multiCapabilities": [{
-            "browserName": "firefox"
+            "browserName": "chrome",
+            "chromeOptions": { "args": [ "--headless", "--disable-gpu"] }
+          },{ 
+            "browserName": "firefox",
+            "moz:firefoxOptions": {
+                "args": [ "--headless" ]
+            },
+            "marionette": true,
+            "webdriverClick":false
           }],
 
         "specs": [
-            "./features/*.feature"
+            "./features/sampleGallery.feature"
         ]
     }
 }
