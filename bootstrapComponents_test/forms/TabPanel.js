@@ -55,7 +55,7 @@ function onTabChange(previousIndex, event) {
  * @properties={typeid:24,uuid:"E334E859-2100-44A6-B7BA-887ECF15B6AF"}
  */
 function getMaxTabIndex(event) {
-	log('Max tab index: element ' + event.getElementName() + ' | ' + elements.tabpanel.getMaxTabIndex())
+	log('Max tab index: element ' + event.getElementName() + ' | ' + elements.tabpanel.tabs.length)
 }
 
 /**
@@ -68,7 +68,7 @@ function getMaxTabIndex(event) {
  * @properties={typeid:24,uuid:"E048CBDF-96C0-4F6D-BFBD-14AB14AB298E"}
  */
 function getSelectedTabFOrmName(event) {
-	log('Selected Tab form: element ' + event.getElementName() + ' | ' + elements.tabpanel.getSelectedTabFormName())
+	log('Selected Tab form: element ' + event.getElementName() + ' | ' + elements.tabpanel.tabs[elements.tabpanel.tabIndex -1].containedForm)
 }
 
 /**
@@ -79,7 +79,7 @@ function getSelectedTabFOrmName(event) {
  * @properties={typeid:24,uuid:"74CF486E-5185-4082-913A-C77AA6AA958D"}
  */
 function getTabFormNameAt(event) {
-	log('Tab form name at 1: element ' + event.getElementName() + ' | ' + elements.tabpanel.getTabFormNameAt(1))
+	log('Tab form name at 1: element ' + event.getElementName() + ' | ' + elements.tabpanel.tabs[tabIndexEdit -1].containedForm)
 }
 
 /**
@@ -92,7 +92,7 @@ function getTabFormNameAt(event) {
  * @properties={typeid:24,uuid:"E94FECEC-8E7F-4507-B6A2-B4AFF7D3E968"}
  */
 function getTabNameAt(event) {
-	log('Tab1 name: element ' + event.getElementName() + ' | ' + elements.tabpanel.getTabNameAt(1))
+	log('Tab name: element ' + event.getElementName() + ' | ' + elements.tabpanel.tabs[tabIndexEdit -1].name)
 }
 
 /**
@@ -103,7 +103,7 @@ function getTabNameAt(event) {
  * @properties={typeid:24,uuid:"CA88E719-8CD2-46D3-A47B-FED435CB8BCB"}
  */
 function tabRelationName(event) {
-	log('Tab1 relation name: element ' + event.getElementName() + ' | ' + elements.tabpanel.getTabRelationNameAt(1))
+	log('Tab relation name: element ' + event.getElementName() + ' | ' + elements.tabpanel.tabs[tabIndexEdit -1].relationName)
 }
 
 /**
@@ -114,7 +114,7 @@ function tabRelationName(event) {
  * @properties={typeid:24,uuid:"50897136-3406-4661-947C-48BCADE76ABF"}
  */
 function tab1Text(event) {
-	log('Tab1 text: element ' + event.getElementName() + ' | ' + elements.tabpanel.getTabTextAt(1))
+	log('Tab text: element ' + event.getElementName() + ' | ' + elements.tabpanel.tabs[tabIndexEdit -1].text)
 }
 
 /**
@@ -125,7 +125,7 @@ function tab1Text(event) {
  * @properties={typeid:24,uuid:"2E165EFB-DFF1-4052-9B57-FD1B05707CB5"}
  */
 function isTabEnabledAt(event) {
-	log('Tab1 enabled ? : element ' + event.getElementName() + ' | ' + elements.tabpanel.isTabEnabledAt(1))
+	log('Tab enabled ? : element ' + event.getElementName() + ' | ' + !elements.tabpanel.tabs[tabIndexEdit -1].disabled)
 }
 
 /**
@@ -136,8 +136,8 @@ function isTabEnabledAt(event) {
  * @properties={typeid:24,uuid:"3E68B247-48ED-4045-8E84-A5702FF6F58B"}
  */
 function removeAllTabs(event) {
-	elements.tabpanel.removeAllTabs();
-	log('All tab removed. Available tabs : element ' + event.getElementName() + ' | ' + elements.tabpanel.getMaxTabIndex())
+	elements.tabpanel.tabs = []
+	log('All tab removed. Available tabs : element ' + event.getElementName() + ' | ' +  elements.tabpanel.tabs.length)
 }
 
 /**
@@ -149,7 +149,7 @@ function removeAllTabs(event) {
  */
 function removeTab1(event) {
 	elements.tabpanel.removeTabAt(tabIndexEdit)
-	log('Tab1 removed. Available tabs : element ' + event.getElementName() + ' | ' + elements.tabpanel.getMaxTabIndex())
+	log('Tab removed. Available tabs : element ' + event.getElementName() + ' | ' + elements.tabpanel.tabs.length)
 }
 
 /**
@@ -160,8 +160,8 @@ function removeTab1(event) {
  * @properties={typeid:24,uuid:"0B292AFD-91A0-475A-8D04-5F124A7E4ACE"}
  */
 function toggleTab1Enable(event) {
-	elements.tabpanel.setTabEnabledAt(tabIndexEdit, elements.tabpanel.isTabEnabledAt(tabIndexEdit) ? false : true)
-	log('Tab1 enabled : element ' + event.getElementName() + ' | ' + elements.tabpanel.isTabEnabledAt(tabIndexEdit))
+	elements.tabpanel.tabs[tabIndexEdit - 1].disabled = elements.tabpanel.tabs[tabIndexEdit - 1].disabled ? false : true;
+	log('Tab enabled : element ' + event.getElementName() + ' | ' + !elements.tabpanel.tabs[tabIndexEdit-1].disabled)
 }
 
 /**
@@ -175,8 +175,8 @@ function setTab1Text(event) {
 	if (!tabIndexEdit) {
 		return;
 	}
-	elements.tabpanel.setTabTextAt(tabIndexEdit,'Hello')
-	log('Tab1 text : element ' + event.getElementName() + ' | ' + elements.tabpanel.getTabTextAt(tabIndexEdit))
+	elements.tabpanel.tabs[tabIndexEdit -1]= 'Hello';
+	log('Tab text : element ' + event.getElementName() + ' | ' + elements.tabpanel.tabs[tabIndexEdit-1])
 }
 
 /**
@@ -197,7 +197,8 @@ function AddTab(event) {
 	frm.newLabel('This is form ' + tabNo, 10, 10, 200,20);
 	frm.width = frm.getBodyPart().height = 200;
 	frm.width = 200;
-	elements.tabpanel.addTab(frm.name, 'frm'+tabNo, 'Tab ' + tabNo, 'Tooltip ' + tabNo, null, tabIndexEdit);
+	var tab = elements.tabpanel.addTab(frm.name, 'Tab '+ tabNo, tabIndexEdit);
+	tab.showCloseIcon = true;
 	tabNo++;
 }
 
@@ -216,9 +217,73 @@ function AddTab(event) {
  */
 function onDataChangeTabIndex(oldValue, newValue, event) {
 	// TODO Auto-generated method stub
-	if (tabIndex && tabIndex > 0 && tabIndex <= elements.tabpanel.getMaxTabIndex()) {
+	if (tabIndex && tabIndex > 0 && tabIndex <= elements.tabpanel.tabs.length) {
 		elements.tabpanel.tabIndex = tabIndex
 		return true
 	}
 	return false
+}
+
+/**
+ * Fired when the user clicks on the tab close icon. When false is returned, the tab close is prevented.
+ *
+ * @param {JSEvent} event The event that triggered the action
+ * @param {Number} closeTabIndex The index of the tab that was clicked
+ *
+ * @return {boolean}
+ *
+ * @protected
+ *
+ * @properties={typeid:24,uuid:"8DB02B33-9090-46AB-A649-BB0090AB20FC"}
+ */
+function onTabClose(event, closeTabIndex) {
+	if (!event) {
+		log('EXCEPTION: no event at onTabChange' )
+		tabIndex = elements.tabpanel.tabIndex;
+		return true;
+	};
+
+	/** @type {RuntimeComponent} */
+	var tabElement = elements[event.getElementName()];
+	tabIndex = tabElement.tabIndex;
+	log('Tab close: element ' + event.getElementName() + ' | ' + closeTabIndex + ' - ' + tabIndex );
+	return true;
+}
+
+/**
+ * Perform the element default action.
+ *
+ * @param {JSEvent} event the event that triggered the action
+ *
+ * @protected
+ *
+ * @properties={typeid:24,uuid:"471B0296-3E7B-40BB-89F0-7E04571D8680"}
+ */
+function onActionRemoveAllTabs(event) {
+	elements.tabpanel.tabs = [];
+	tabNo = 0;
+}
+
+/**
+ * Perform the element default action.
+ *
+ * @param {JSEvent} event the event that triggered the action
+ *
+ * @protected
+ *
+ * @properties={typeid:24,uuid:"245D6C05-E226-4B7F-AFD9-3D335F0F42E8"}
+ */
+function onActionReplaceTabs(event) {
+	onActionRemoveAllTabs(event);
+	var frm = solutionModel.newForm(application.getUUID().toString(), solutionModel.getForm("dummyBase"));
+	frm.newLabel('This is form ' + tabNo, 10, 10, 200,20);
+	frm.width = frm.getBodyPart().height = 200;
+	frm.width = 200;
+	var newTab = {
+		containedForm: frm.name,
+		text: 'Tab '+ tabNo,
+		disabled: true
+	}
+	elements.tabpanel.tabs = [newTab]
+	tabNo = 1;
 }

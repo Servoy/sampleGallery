@@ -1,6 +1,15 @@
 encapsulation:60,
 items:[
 {
+location:"25,24",
+name:"allowc",
+onActionMethodID:"D43A7BCB-9053-4C20-B656-FF581FDB0A8A",
+size:"105,52",
+text:"Test",
+typeid:7,
+uuid:"2B82CBB2-E345-4BE0-8CE4-120148DAA98A"
+},
+{
 height:200,
 partType:5,
 typeid:19,
@@ -9,7 +18,7 @@ uuid:"2BE872F4-92B8-4FE8-8B19-6A6C5F20BD17"
 {
 location:"148,118",
 name:"block",
-onActionMethodID:"-1",
+onActionMethodID:"E96CE9A4-7C95-4A8E-971F-EF4006BD4386",
 size:"105,52",
 text:"BLOCK Hide",
 typeid:7,

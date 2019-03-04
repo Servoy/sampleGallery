@@ -33,7 +33,7 @@ function onShow(firstShow, event) {
  * @properties={typeid:24,uuid:"ABF045CE-BB3D-4EF2-9F53-01F81E39CA80"}
  */
 function onHide(event) {
-	var msg = "Hide " + controller.getName()
+	var msg = "Hide " + controller.getName() + ' - ' + allowHide;
 	log(msg)
 	return allowHide;
 }
@@ -79,4 +79,17 @@ function btnAllowHide(event) {
 function btnBlockHide(event) {
 	allowHide = false;
 	updateUI();
+}
+
+/**
+ * Perform the element default action.
+ *
+ * @param {JSEvent} event the event that triggered the action
+ *
+ * @protected
+ *
+ * @properties={typeid:24,uuid:"D43A7BCB-9053-4C20-B656-FF581FDB0A8A"}
+ */
+function btnTestShow(event) {
+	plugins.dialogs.showInfoDialog('Is Active',controller.getName())
 }

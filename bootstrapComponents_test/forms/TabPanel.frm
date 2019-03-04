@@ -14,7 +14,7 @@ onActionMethodID:"CA88E719-8CD2-46D3-A47B-FED435CB8BCB",
 onDoubleClickMethodID:"-1",
 onRightClickMethodID:"-1",
 size:"140,20",
-text:"Tab1 Relation name",
+text:"Tab Relation name",
 typeid:7,
 uuid:"133C1BAF-FC06-4B1B-B7A7-27410A035FA3"
 },
@@ -27,9 +27,12 @@ location:{
 x:15,
 y:280
 },
+onChangeMethodID:"642EC982-81E9-4EF6-9824-8B8A7986117E",
 onTabChange:"642EC982-81E9-4EF6-9824-8B8A7986117E",
 onTabChangeMethodID:"642EC982-81E9-4EF6-9824-8B8A7986117E",
+onTabCloseMethodID:"8DB02B33-9090-46AB-A649-BB0090AB20FC",
 readOnly:true,
+showTabCloseIcon:true,
 size:{
 height:300,
 width:500
@@ -37,19 +40,34 @@ width:500
 tabs:[
 {
 containedForm:"B467139F-F05A-4F48-81B8-3E9EB8DE7C7D",
+disabled:true,
+showCloseIcon:true,
 svyUUID:"F1368067-4A99-485C-AF72-F4505CD628F2",
 text:"First Tab"
 },
 {
 containedForm:"0D6A8588-532F-4E7D-848D-03AEEB13499D",
-disabled:true,
+showCloseIcon:true,
 svyUUID:"75D3FF90-0E9E-44A6-88FB-64CDDE60E38A",
 text:"Second Tab"
 },
 {
-containedForm:"C3C59A8E-B7AA-4659-B2D4-C630BC7E48BE",
-disabled:false,
+containedForm:"88A90717-3BF2-418F-A42A-D774BB0B374D",
+disabled:true,
+showCloseIcon:true,
 svyUUID:"FE33D96D-A103-4FA0-95F8-995C8DCFD5AC",
+text:"Third Tab"
+},
+{
+containedForm:"897DCFE1-B43F-452E-952C-5FD8AEE1BA67",
+disabled:true,
+showCloseIcon:true,
+svyUUID:"97C36A9E-BD87-4F96-A8F0-41CE03D7672C",
+text:"Fourth Tab"
+},
+{
+containedForm:"C3C59A8E-B7AA-4659-B2D4-C630BC7E48BE",
+svyUUID:"881580D9-37BA-40D2-87CA-74EA7104E97A",
 text:"Fifth Tab"
 }
 ]
@@ -62,12 +80,22 @@ typeid:47,
 uuid:"1B132CAD-6BFF-4A79-A3D3-E0D02C560A6E"
 },
 {
+location:"557,171",
+onActionMethodID:"471B0296-3E7B-40BB-89F0-7E04571D8680",
+onDoubleClickMethodID:"-1",
+onRightClickMethodID:"-1",
+size:"100,20",
+text:"Remove ALL",
+typeid:7,
+uuid:"203DEC77-AC4D-4BD0-AD02-29FC5E47BCBC"
+},
+{
 location:"445,171",
 onActionMethodID:"586E39A0-672B-43CB-9287-B303B4D3D030",
 onDoubleClickMethodID:"-1",
 onRightClickMethodID:"-1",
 size:"100,20",
-text:"ADD TAB",
+text:"Add Tab",
 typeid:7,
 uuid:"3FDE9460-AFA8-46C6-9380-BBDF41E4D475"
 },
@@ -83,15 +111,32 @@ onActionMethodID:"74CF486E-5185-4082-913A-C77AA6AA958D",
 onDoubleClickMethodID:"-1",
 onRightClickMethodID:"-1",
 size:"120,20",
-text:"Tab1 form name",
+text:"Tab form name",
 typeid:7,
 uuid:"41D929A5-66C7-43A8-BBB1-33EB36DFB3AA"
+},
+{
+location:"670,171",
+onActionMethodID:"245D6C05-E226-4B7F-AFD9-3D335F0F42E8",
+onDoubleClickMethodID:"-1",
+onRightClickMethodID:"-1",
+size:"100,20",
+text:"Replace all Tabs",
+typeid:7,
+uuid:"4687A311-1535-4F84-B148-508988EACD00"
 },
 {
 extendsID:"645C8BBA-40FD-4318-995B-52AB2C96B85E",
 height:600,
 typeid:19,
 uuid:"485B62CA-6310-4C60-B455-26EA8C6A7770"
+},
+{
+location:"14,236",
+size:"141,20",
+text:"Change tab index to",
+typeid:7,
+uuid:"5168B0DE-8432-4FD9-B370-D5261001201F"
 },
 {
 location:"140,146",
@@ -123,7 +168,7 @@ location:"651,146",
 onActionMethodID:"50897136-3406-4661-947C-48BCADE76ABF",
 onDoubleClickMethodID:"-1",
 onRightClickMethodID:"-1",
-text:"Tab1 text",
+text:"Tab text",
 typeid:7,
 uuid:"7F237D65-3446-4F76-BE0B-7DA53C7A34A9"
 },
@@ -133,7 +178,7 @@ onActionMethodID:"E94FECEC-8E7F-4507-B6A2-B4AFF7D3E968",
 onDoubleClickMethodID:"-1",
 onRightClickMethodID:"-1",
 size:"100,20",
-text:"Tab1 Name",
+text:"Tab Name",
 typeid:7,
 uuid:"96594285-D2C6-4A9C-9674-777DC432546D"
 },
@@ -143,7 +188,7 @@ onActionMethodID:"724A5BE5-89C5-496A-807C-BE39B3BDE7C8",
 onDoubleClickMethodID:"-1",
 onRightClickMethodID:"-1",
 size:"150,20",
-text:"Tab1 Text as \"Hello\"",
+text:"Set Tab Text to \"Hello\"",
 typeid:7,
 uuid:"9D6367F6-2689-41FF-88A7-16C009B5799A"
 },
@@ -173,7 +218,7 @@ onActionMethodID:"0B292AFD-91A0-475A-8D04-5F124A7E4ACE",
 onDoubleClickMethodID:"-1",
 onRightClickMethodID:"-1",
 size:"140,20",
-text:"Toggle tab1 enabled",
+text:"Toggle Tab enabled",
 typeid:7,
 uuid:"BCD20A16-4801-4670-9954-8781B29086C4"
 },
@@ -193,7 +238,7 @@ onActionMethodID:"66BC495C-6806-472C-9F5D-E3862ED4431C",
 onDoubleClickMethodID:"-1",
 onRightClickMethodID:"-1",
 size:"120,20",
-text:"Remove tab1",
+text:"Remove Tab",
 typeid:7,
 uuid:"E641D2C1-EF2E-485A-8445-B4BC5E2508FF"
 }
