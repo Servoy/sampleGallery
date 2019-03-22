@@ -10,7 +10,5 @@
  * @properties={typeid:24,uuid:"0E3E1FC5-A8CA-4EE0-9782-17D5629658D1"}
  */
 function onSolutionOpenSampleGallery(arg, queryParams) {
-	scopes.svyThemeRoller.addLESSFileDependancy("themes/theme-servoy.less");
-	//scopes.svyThemeRoller.addLESSFileDependancy("theme-custom.less");
-	scopes.svyThemeRoller.initLessJS();
+
 }
