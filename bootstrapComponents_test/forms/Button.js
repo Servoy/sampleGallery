@@ -27,3 +27,17 @@ function onClick(event) {
 	// TODO Auto-generated method stub
 	plugins.dialogs.showInfoDialog("Hello","Clik")
 }
+
+/**
+
+ * @protected
+ *
+ * @properties={typeid:24,uuid:"FF969F61-85C8-4670-8D88-1F0E790E42BF"}
+ */
+function onActionToggleIcon(event) {
+	if (elements.button_icon.imageStyleClass == "fa fa-arrow-up") {
+		elements.button_icon.imageStyleClass = "fa fa-arrow-down";
+	} else {
+		elements.button_icon.imageStyleClass = "fa fa-arrow-up";		
+	}
+}

@@ -9,6 +9,32 @@ uuid:"2022D1EB-0B2B-4969-8F1A-EF60BDC06006"
 },
 {
 json:{
+imageStyleClass:"fa fa-arrow-up",
+location:{
+x:10,
+y:324
+},
+onActionMethodID:"FF969F61-85C8-4670-8D88-1F0E790E42BF",
+onDoubleClickMethodID:"F1D5CA69-7A6A-4665-B3DA-97E92DB14E16",
+onRightClickMethodID:"8E703DC5-AB20-421A-837A-6D7E773AE965",
+size:{
+height:30,
+width:150
+},
+styleClass:"btn btn-default",
+tabSeq:3,
+text:"Toggle Icon",
+theme:"yellow"
+},
+location:"10,324",
+name:"button_icon",
+size:"150,30",
+typeName:"bootstrapcomponents-button",
+typeid:47,
+uuid:"3551FCB0-1A94-44FE-B60A-63F55F107309"
+},
+{
+json:{
 location:{
 x:376,
 y:146
@@ -176,6 +202,7 @@ json:{
 buttonType:"md-button md-raised md-primary",
 dataProviderID:"varString",
 iconName:null,
+imageStyleClass:"fa fa-user",
 location:{
 x:10,
 y:146
@@ -189,6 +216,7 @@ width:150
 },
 styleClass:"btn btn-default",
 tabSeq:4,
+text:"IMG",
 theme:"deep-purple"
 },
 location:"10,146",
