@@ -117,6 +117,7 @@ json:{
 anchors:15,
 columns:[
 {
+dataprovider:"link",
 enableRowGroup:false,
 id:"link",
 styleClass:"font-icon fa fa-external-link-square",
@@ -124,6 +125,7 @@ svyUUID:"3B617265-A8C8-4957-831A-F9E3822C2FDA",
 width:50
 },
 {
+dataprovider:"employee",
 enableFilter:true,
 enablePivot:true,
 headerTitle:"Employee",
@@ -132,6 +134,7 @@ rowGroupIndex:0,
 svyUUID:"DB82476B-86EC-408F-B72B-AD8037BE6603"
 },
 {
+dataprovider:"shipcity",
 enableFilter:true,
 enablePivot:true,
 headerTitle:"Delivery City",
@@ -140,6 +143,7 @@ rowGroupIndex:2,
 svyUUID:"565727CC-20B2-4AC5-8EC6-4D9E1B4FEDE5"
 },
 {
+dataprovider:"shipcountry",
 enableFilter:true,
 enablePivot:true,
 headerTitle:"Delivery Country",
@@ -148,6 +152,7 @@ rowGroupIndex:1,
 svyUUID:"B57C4813-FF9A-4A16-A20B-4EDDFD29CB19"
 },
 {
+dataprovider:"year",
 enableFilter:true,
 enablePivot:true,
 formatType:null,
@@ -157,6 +162,7 @@ svyUUID:"9569CC21-BC88-497F-AC29-4EA8FA750D23",
 width:80
 },
 {
+dataprovider:"month",
 enableFilter:true,
 enablePivot:true,
 formatType:null,
@@ -167,6 +173,7 @@ width:80
 },
 {
 aggFunc:"max",
+dataprovider:"order_total_max",
 enableFilter:true,
 enableRowGroup:false,
 format:"\u20ac #,###.00",
@@ -177,6 +184,7 @@ svyUUID:"CE1004B5-285D-4DCE-832F-8474F662D919"
 },
 {
 aggFunc:"sum",
+dataprovider:"order_total",
 enableFilter:true,
 enableRowGroup:false,
 format:"\u20ac #,###.00",

@@ -134,6 +134,7 @@ json:{
 anchors:15,
 columns:[
 {
+dataprovider:"link",
 enableRowGroup:false,
 id:"link",
 styleClass:"font-icon fa fa-external-link-square",
@@ -141,6 +142,7 @@ svyUUID:"11E4517C-7561-419D-8AA9-07BAF9DE8B4A",
 width:50
 },
 {
+dataprovider:"orderid",
 enableFilter:true,
 enableRowGroup:false,
 headerTitle:"Order",
@@ -149,6 +151,7 @@ svyUUID:"8BF3F70E-39A3-40F5-9E48-4A1C889A39FC",
 width:80
 },
 {
+dataprovider:"companyNameCalc",
 enableFilter:true,
 enablePivot:true,
 headerTitle:"Customer",
@@ -156,6 +159,7 @@ id:"companyNameCalc",
 svyUUID:"883D8768-4DF5-4B58-9439-A778D9D8C38A"
 },
 {
+dataprovider:"employeeNameCalc",
 enableFilter:true,
 enablePivot:true,
 headerTitle:"Employee",
@@ -163,6 +167,7 @@ id:"employeeNameCalc",
 svyUUID:"320BD118-F2CE-4E6E-8AE1-F7F59C3021C8"
 },
 {
+dataprovider:"shipcity",
 enableFilter:true,
 enablePivot:true,
 headerTitle:"Delivery City",
@@ -170,6 +175,7 @@ id:"shipcity",
 svyUUID:"4337565A-0E65-4E5F-981D-83B5045FC718"
 },
 {
+dataprovider:"shipcountry",
 enableFilter:true,
 enablePivot:true,
 headerTitle:"Delivery Country",
@@ -177,6 +183,7 @@ id:"shipcountry",
 svyUUID:"DC08D2C8-0BF7-4F1C-AAD1-1ADC46AA34B4"
 },
 {
+dataprovider:"orderdate",
 enableFilter:true,
 enablePivot:true,
 format:"yyyy",
@@ -187,6 +194,7 @@ svyUUID:"617B3F44-AFB5-40F1-AC62-CFC93357D3C7",
 width:80
 },
 {
+dataprovider:"orderdate",
 enableFilter:true,
 enablePivot:true,
 format:"MMM",
@@ -197,6 +205,7 @@ svyUUID:"BB5C2FD3-C8D3-43A0-AB27-E8D00A280FE7",
 width:80
 },
 {
+dataprovider:"orderdate",
 enableFilter:true,
 enablePivot:true,
 format:"dd-MM-yyyy",
@@ -206,6 +215,7 @@ id:"orderdate",
 svyUUID:"5C14CF46-16B2-4D43-BF04-0CC60D5939A1"
 },
 {
+dataprovider:"orderStatus",
 enableFilter:true,
 enablePivot:true,
 headerTitle:"Status",
@@ -216,6 +226,7 @@ width:120
 },
 {
 aggFunc:"max",
+dataprovider:"order_total",
 enableRowGroup:false,
 format:"\u20ac #,###.00",
 formatType:"NUMBER",
@@ -242,8 +253,11 @@ location:{
 x:10,
 y:138
 },
+multiSelect:true,
 onCellClick:"BA2AA1A9-9A3C-4115-A725-D251D7119590",
+onColumnStateChanged:"92E2EDCC-F954-436D-A8C6-30A082959204",
 onLazyLoadingGetRows:null,
+onRowSelected:"13E55F71-4B82-427A-B532-3A0773FA6F19",
 rowHeight:55,
 size:{
 height:322,
