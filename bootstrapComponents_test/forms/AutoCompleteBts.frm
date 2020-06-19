@@ -227,7 +227,7 @@ uuid:"BA53641E-3AE8-4D38-9AE2-130D2211BE63"
 },
 {
 json:{
-dataProviderID:"varString",
+dataProviderID:"varNumber",
 label:"Wide list",
 location:{
 x:10,

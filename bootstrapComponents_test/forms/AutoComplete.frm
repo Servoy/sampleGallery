@@ -239,7 +239,7 @@ uuid:"7525C9F0-249D-441B-8D4F-F284B4E1D3AA"
 },
 {
 json:{
-dataProviderID:"varString",
+dataProviderID:"varNumber",
 label:"Wide list",
 location:{
 x:139,

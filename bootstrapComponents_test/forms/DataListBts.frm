@@ -206,7 +206,7 @@ extendsID:"279836DF-F344-4DE6-9D12-A40B17F9FCC8",
 items:[
 {
 json:{
-dataProviderID:"varString",
+dataProviderID:"varNumber",
 label:"Wide list",
 location:{
 x:10,

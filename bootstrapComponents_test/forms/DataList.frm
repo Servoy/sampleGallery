@@ -142,7 +142,7 @@ visible:false
 },
 {
 json:{
-dataProviderID:"varString",
+dataProviderID:"varNumber",
 label:"Wide list",
 location:{
 x:232,

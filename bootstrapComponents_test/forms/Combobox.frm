@@ -164,7 +164,7 @@ uuid:"A1DB15B6-EE1A-468F-B060-18559CEDB978"
 },
 {
 json:{
-dataProviderID:"varString",
+dataProviderID:"varNumber",
 label:"Wide list",
 location:{
 x:139,
