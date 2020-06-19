@@ -39,6 +39,12 @@ text:"Table"
 containedForm:"E063A13F-CADF-4D84-8915-DD02DF08E10D",
 svyUUID:"4E88A0A6-620E-439E-BE7B-273C19E5F3C2",
 text:"Servoy Table"
+},
+{
+containedForm:"7A97F4D3-E74E-48E1-9178-C7D584EF9860",
+name:"HtmlArea",
+svyUUID:"6EFBFF0C-44C1-4FAE-AC0A-05CD1FC9260D",
+text:"HTML Area"
 }
 ]
 },

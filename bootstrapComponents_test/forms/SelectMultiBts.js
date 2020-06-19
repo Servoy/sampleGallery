@@ -1,14 +1,14 @@
 /**
  * @type {String}
  *
- * @properties={typeid:35,uuid:"74604156-BE37-475C-8C23-1B325487358E"}
+ * @properties={typeid:35,uuid:"79C092B8-1A4C-4EF1-843E-31E6856B996F"}
  */
 var longText = null;
 
 /**
  * @param event
  *
- * @properties={typeid:24,uuid:"2B061C1A-9B69-46DB-BBDD-4568CACD8EC6"}
+ * @properties={typeid:24,uuid:"A90046B3-1D89-4FF8-80CD-2A3A1DD93737"}
  */
 function onLoad(event) {
 	varNumber = 1
