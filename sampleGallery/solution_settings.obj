@@ -1,7 +1,7 @@
 firstFormID:"26F4D284-0209-4BC5-A16D-45EC274FCF0E",
 i18nDataSource:"db:/fullcalendar/tbl_i18n",
 loginFormID:"-1",
-modulesNames:"svyMicroSamples,exampleCSS,exampleFilter,svyBlockUiDemo,svyChartJSExample,svyCryptoExample,svyKeyListenerExample,svySearchExample,webNotificationsExample,exampleSharedWebPackages,fullcalendarComponentSample,svyWebStorageExample,svyRecaptcha,svyGroupingGridDemo,bootstrapExtraComponentsDemo,twelveGridLayoutSample,svyPDFViewerExample,svyExampleBasicComponents,svyExtraComponents,webCamExample,svyUtils,postImport",
+modulesNames:"svyMicroSamples,exampleCSS,exampleFilter,svyBlockUiDemo,svyChartJSExample,svyCryptoExample,svyKeyListenerExample,svySearchExample,webNotificationsExample,exampleSharedWebPackages,fullcalendarComponentSample,svyWebStorageExample,svyRecaptcha,svyGroupingGridDemo,bootstrapExtraComponentsDemo,twelveGridLayoutSample,svyPDFViewerExample,svyExtraComponents,webCamExample,svyUtils,postImport",
 onOpenMethodID:"0E3E1FC5-A8CA-4EE0-9782-17D5629658D1",
 titleText:"Servoy Sample Gallery",
 styleSheetID:"A060BE9A-592F-49BF-A6FC-9F46ADFA6356",
