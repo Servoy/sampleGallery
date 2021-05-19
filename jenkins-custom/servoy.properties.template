@@ -71,3 +71,4 @@ servoy.server.start.rmi=false
 servoy.use.client.timezone=true
 servoy.ngclient.enableWebResourceOptimizer=true
 servoy.ngclient.testingMode=true
+servoy.record.lock.lockInDB=true
