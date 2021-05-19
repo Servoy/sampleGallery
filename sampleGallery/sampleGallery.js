@@ -11,4 +11,6 @@
  */
 function onSolutionOpenSampleGallery(arg, queryParams) {
 
+	// load fontawesome lib
+	plugins.fontawesomeLib.load()
 }
